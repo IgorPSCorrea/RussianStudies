@@ -1,0 +1,3419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width"
+      ="device-width,"
+      initial-scale="1.0"
+    />
+    <title>Russian Vocabulary</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #333; /* Cor de fundo escura para a página */
+        color: white; /* Cor do texto */
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #444; /* Cor de fundo da tabela */
+        color: white; /* Cor do texto da tabela */
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #666; /* Cor da borda */
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #555; /* Cor de fundo do cabeçalho */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Russian Vocabulary</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Word in Russian</th>
+          <th>Example of Phonetics</th>
+          <th>Translate to English</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Привет
+            <button onclick="speak('Привет')">Speak</button>
+          </td>
+          <td>Privet</td>
+          <td>Hello</td>
+        </tr>
+        <tr>
+          <td>
+            Спасибо
+            <button onclick="speak('Спасибо')">Speak</button>
+          </td>
+          <td>Spasibo</td>
+          <td>Thank you</td>
+        </tr>
+        <tr>
+          <td>
+            Да
+            <button onclick="speak('Да')">Speak</button>
+          </td>
+          <td>Da</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>
+            Нет
+            <button onclick="speak('Нет')">Speak</button>
+          </td>
+          <td>Nyet</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>
+            Пожалуйста
+            <button onclick="speak('Пожалуйста')">Speak</button>
+          </td>
+          <td>Pozhaluysta</td>
+          <td>Please</td>
+        </tr>
+        <tr>
+          <td>
+            Извините
+            <button onclick="speak('Извините')">Speak</button>
+          </td>
+          <td>Izvinite</td>
+          <td>Excuse me / Sorry</td>
+        </tr>
+        <tr>
+          <td>
+            Доброе утро
+            <button onclick="speak('Доброе утро')">Speak</button>
+          </td>
+          <td>Dobroye utro</td>
+          <td>Good morning</td>
+        </tr>
+        <tr>
+          <td>
+            Добрый вечер
+            <button onclick="speak('Добрый вечер')">Speak</button>
+          </td>
+          <td>Dobryy vecher</td>
+          <td>Good evening</td>
+        </tr>
+        <tr>
+          <td>
+            Спокойной ночи
+            <button onclick="speak('Спокойной ночи')">Speak</button>
+          </td>
+          <td>Spokoynoy nochi</td>
+          <td>Good night</td>
+        </tr>
+        <tr>
+          <td>
+            До свидания
+            <button onclick="speak('До свидания')">Speak</button>
+          </td>
+          <td>Do svidaniya</td>
+          <td>Goodbye</td>
+        </tr>
+        <tr>
+          <td>
+            Здравствуйте
+            <button onclick="speak('Здравствуйте')">Speak</button>
+          </td>
+          <td>Zdravstvuyte</td>
+          <td>Hello (formal)</td>
+        </tr>
+        <tr>
+          <td>
+            Я
+            <button onclick="speak('Я')">Speak</button>
+          </td>
+          <td>Ya</td>
+          <td>I</td>
+        </tr>
+        <tr>
+          <td>
+            Ты
+            <button onclick="speak('Ты')">Speak</button>
+          </td>
+          <td>Ty</td>
+          <td>You (informal)</td>
+        </tr>
+        <tr>
+          <td>
+            Он
+            <button onclick="speak('Он')">Speak</button>
+          </td>
+          <td>On</td>
+          <td>He</td>
+        </tr>
+        <tr>
+          <td>
+            Она
+            <button onclick="speak('Она')">Speak</button>
+          </td>
+          <td>Ona</td>
+          <td>She</td>
+        </tr>
+        <tr>
+          <td>
+            Мы
+            <button onclick="speak('Мы')">Speak</button>
+          </td>
+          <td>My</td>
+          <td>We</td>
+        </tr>
+        <tr>
+          <td>
+            Вы
+            <button onclick="speak('Вы')">Speak</button>
+          </td>
+          <td>Vy</td>
+          <td>You (formal/plural)</td>
+        </tr>
+        <tr>
+          <td>
+            Они
+            <button onclick="speak('Они')">Speak</button>
+          </td>
+          <td>Oni</td>
+          <td>They</td>
+        </tr>
+        <tr>
+          <td>
+            Меня зовут
+            <button onclick="speak('Меня зовут')">Speak</button>
+          </td>
+          <td>Menya zovut</td>
+          <td>My name is</td>
+        </tr>
+        <tr>
+          <td>
+            Как дела?
+            <button onclick="speak('Как дела?')">Speak</button>
+          </td>
+          <td>Kak dela?</td>
+          <td>How are you?</td>
+        </tr>
+        <tr>
+          <td>
+            Хорошо
+            <button onclick="speak('Хорошо')">Speak</button>
+          </td>
+          <td>Khorosho</td>
+          <td>Good</td>
+        </tr>
+        <tr>
+          <td>
+            Плохо
+            <button onclick="speak('Плохо')">Speak</button>
+          </td>
+          <td>Plokho</td>
+          <td>Bad</td>
+        </tr>
+        <tr>
+          <td>
+            Так себе
+            <button onclick="speak('Так себе')">Speak</button>
+          </td>
+          <td>Tak sebe</td>
+          <td>So-so</td>
+        </tr>
+        <tr>
+          <td>
+            Откуда вы?
+            <button onclick="speak('Откуда вы?')">Speak</button>
+          </td>
+          <td>Otkuda vy?</td>
+          <td>Where are you from?</td>
+        </tr>
+        <tr>
+          <td>
+            Я из ...
+            <button onclick="speak('Я из ...')">Speak</button>
+          </td>
+          <td>Ya iz ...</td>
+          <td>I am from ...</td>
+        </tr>
+        <tr>
+          <td>
+            Сколько это стоит?
+            <button onclick="speak('Сколько это стоит?')">Speak</button>
+          </td>
+          <td>Skol'ko eto stoit?</td>
+          <td>How much does it cost?</td>
+        </tr>
+        <tr>
+          <td>
+            Где
+            <button onclick="speak('Где')">Speak</button>
+          </td>
+          <td>Gde</td>
+          <td>Where</td>
+        </tr>
+        <tr>
+          <td>
+            Когда
+            <button onclick="speak('Когда')">Speak</button>
+          </td>
+          <td>Kogda</td>
+          <td>When</td>
+        </tr>
+        <tr>
+          <td>
+            Почему
+            <button onclick="speak('Почему')">Speak</button>
+          </td>
+          <td>Pochemu</td>
+          <td>Why</td>
+        </tr>
+        <tr>
+          <td>
+            Как
+            <button onclick="speak('Как')">Speak</button>
+          </td>
+          <td>Kak</td>
+          <td>How</td>
+        </tr>
+        <tr>
+          <td>
+            Что
+            <button onclick="speak('Что')">Speak</button>
+          </td>
+          <td>Chto</td>
+          <td>What</td>
+        </tr>
+        <tr>
+          <td>
+            Кто
+            <button onclick="speak('Кто')">Speak</button>
+          </td>
+          <td>Kto</td>
+          <td>Who</td>
+        </tr>
+        <tr>
+          <td>
+            Улица
+            <button onclick="speak('Улица')">Speak</button>
+          </td>
+          <td>Ulitsa</td>
+          <td>Street</td>
+        </tr>
+        <tr>
+          <td>
+            Дом
+            <button onclick="speak('Дом')">Speak</button>
+          </td>
+          <td>Dom</td>
+          <td>House/Home</td>
+        </tr>
+        <tr>
+          <td>
+            Комната
+            <button onclick="speak('Комната')">Speak</button>
+          </td>
+          <td>Komnata</td>
+          <td>Room</td>
+        </tr>
+        <tr>
+          <td>
+            Квартира
+            <button onclick="speak('Квартира')">Speak</button>
+          </td>
+          <td>Kvartira</td>
+          <td>Apartment</td>
+        </tr>
+        <tr>
+          <td>
+            Магазин
+            <button onclick="speak('Магазин')">Speak</button>
+          </td>
+          <td>Magazin</td>
+          <td>Shop</td>
+        </tr>
+        <tr>
+          <td>
+            Ресторан
+            <button onclick="speak('Ресторан')">Speak</button>
+          </td>
+          <td>Restoran</td>
+          <td>Restaurant</td>
+        </tr>
+        <tr>
+          <td>
+            Отель
+            <button onclick="speak('Отель')">Speak</button>
+          </td>
+          <td>Otel'</td>
+          <td>Hotel</td>
+        </tr>
+        <tr>
+          <td>
+            Вокзал
+            <button onclick="speak('Вокзал')">Speak</button>
+          </td>
+          <td>Vokzal</td>
+          <td>Train station</td>
+        </tr>
+        <tr>
+          <td>
+            Аэропорт
+            <button onclick="speak('Аэропорт')">Speak</button>
+          </td>
+          <td>Aeroport</td>
+          <td>Airport</td>
+        </tr>
+        <tr>
+          <td>
+            Вода
+            <button onclick="speak('Вода')">Speak</button>
+          </td>
+          <td>Voda</td>
+          <td>Water</td>
+        </tr>
+        <tr>
+          <td>
+            Еда
+            <button onclick="speak('Еда')">Speak</button>
+          </td>
+          <td>Yeda</td>
+          <td>Food</td>
+        </tr>
+        <tr>
+          <td>
+            Хлеб
+            <button onclick="speak('Хлеб')">Speak</button>
+          </td>
+          <td>Khleb</td>
+          <td>Bread</td>
+        </tr>
+        <tr>
+          <td>
+            Молоко
+            <button onclick="speak('Молоко')">Speak</button>
+          </td>
+          <td>Moloko</td>
+          <td>Milk</td>
+        </tr>
+        <tr>
+          <td>
+            Мясо
+            <button onclick="speak('Мясо')">Speak</button>
+          </td>
+          <td>Myaso</td>
+          <td>Meat</td>
+        </tr>
+        <tr>
+          <td>
+            Рыба
+            <button onclick="speak('Рыба')">Speak</button>
+          </td>
+          <td>Ryba</td>
+          <td>Fish</td>
+        </tr>
+        <tr>
+          <td>
+            Фрукты
+            <button onclick="speak('Фрукты')">Speak</button>
+          </td>
+          <td>Frukty</td>
+          <td>Fruits</td>
+        </tr>
+        <tr>
+          <td>
+            Овощи
+            <button onclick="speak('Овощи')">Speak</button>
+          </td>
+          <td>Ovoshchi</td>
+          <td>Vegetables</td>
+        </tr>
+        <tr>
+          <td>
+            Суп
+            <button onclick="speak('Суп')">Speak</button>
+          </td>
+          <td>Sup</td>
+          <td>Soup</td>
+        </tr>
+        <tr>
+          <td>
+            Салат
+            <button onclick="speak('Салат')">Speak</button>
+          </td>
+          <td>Salat</td>
+          <td>Salad</td>
+        </tr>
+        <tr>
+          <td>
+            привет
+            <button onclick="speak('привет')">Speak</button>
+          </td>
+          <td>privet</td>
+          <td>hello</td>
+        </tr>
+        <tr>
+          <td>
+            да
+            <button onclick="speak('да')">Speak</button>
+          </td>
+          <td>da</td>
+          <td>yes</td>
+        </tr>
+        <tr>
+          <td>
+            нет
+            <button onclick="speak('нет')">Speak</button>
+          </td>
+          <td>nyet</td>
+          <td>no</td>
+        </tr>
+        <tr>
+          <td>
+            спасибо
+            <button onclick="speak('спасибо')">Speak</button>
+          </td>
+          <td>spasibo</td>
+          <td>thank you</td>
+        </tr>
+        <tr>
+          <td>
+            пожалуйста
+            <button onclick="speak('пожалуйста')">Speak</button>
+          </td>
+          <td>pozhaluysta</td>
+          <td>please</td>
+        </tr>
+        <tr>
+          <td>
+            извините
+            <button onclick="speak('извините')">Speak</button>
+          </td>
+          <td>izvinite</td>
+          <td>excuse me</td>
+        </tr>
+        <tr>
+          <td>
+            здравствуйте
+            <button onclick="speak('здравствуйте')">Speak</button>
+          </td>
+          <td>zdravstvuyte</td>
+          <td>good day</td>
+        </tr>
+        <tr>
+          <td>
+            до свидания
+            <button onclick="speak('до свидания')">Speak</button>
+          </td>
+          <td>do svidaniya</td>
+          <td>goodbye</td>
+        </tr>
+        <tr>
+          <td>
+            доброе утро
+            <button onclick="speak('доброе утро')">Speak</button>
+          </td>
+          <td>dobroye utro</td>
+          <td>good morning</td>
+        </tr>
+        <tr>
+          <td>
+            добрый вечер
+            <button onclick="speak('добрый вечер')">Speak</button>
+          </td>
+          <td>dobryy vecher</td>
+          <td>good evening</td>
+        </tr>
+        <tr>
+          <td>
+            доброй ночи
+            <button onclick="speak('доброй ночи')">Speak</button>
+          </td>
+          <td>dobroy nochi</td>
+          <td>good night</td>
+        </tr>
+        <tr>
+          <td>
+            как дела
+            <button onclick="speak('как дела')">Speak</button>
+          </td>
+          <td>kak dela</td>
+          <td>how are you</td>
+        </tr>
+        <tr>
+          <td>
+            хорошо
+            <button onclick="speak('хорошо')">Speak</button>
+          </td>
+          <td>khorosho</td>
+          <td>good</td>
+        </tr>
+        <tr>
+          <td>
+            плохо
+            <button onclick="speak('плохо')">Speak</button>
+          </td>
+          <td>plokho</td>
+          <td>bad</td>
+        </tr>
+        <tr>
+          <td>
+            меня зовут
+            <button onclick="speak('меня зовут')">Speak</button>
+          </td>
+          <td>menya zovut</td>
+          <td>my name is</td>
+        </tr>
+        <tr>
+          <td>
+            я не понимаю
+            <button onclick="speak('я не понимаю')">Speak</button>
+          </td>
+          <td>ya ne ponimayu</td>
+          <td>I don't understand</td>
+        </tr>
+        <tr>
+          <td>
+            где
+            <button onclick="speak('где')">Speak</button>
+          </td>
+          <td>gde</td>
+          <td>where</td>
+        </tr>
+        <tr>
+          <td>
+            когда
+            <button onclick="speak('когда')">Speak</button>
+          </td>
+          <td>kogda</td>
+          <td>when</td>
+        </tr>
+        <tr>
+          <td>
+            почему
+            <button onclick="speak('почему')">Speak</button>
+          </td>
+          <td>pochemu</td>
+          <td>why</td>
+        </tr>
+        <tr>
+          <td>
+            как
+            <button onclick="speak('как')">Speak</button>
+          </td>
+          <td>kak</td>
+          <td>how</td>
+        </tr>
+        <tr>
+          <td>
+            сколько
+            <button onclick="speak('сколько')">Speak</button>
+          </td>
+          <td>skolko</td>
+          <td>how much</td>
+        </tr>
+        <tr>
+          <td>
+            кто
+            <button onclick="speak('кто')">Speak</button>
+          </td>
+          <td>kto</td>
+          <td>who</td>
+        </tr>
+        <tr>
+          <td>
+            что
+            <button onclick="speak('что')">Speak</button>
+          </td>
+          <td>chto</td>
+          <td>what</td>
+        </tr>
+        <tr>
+          <td>
+            сейчас
+            <button onclick="speak('сейчас')">Speak</button>
+          </td>
+          <td>seychas</td>
+          <td>now</td>
+        </tr>
+        <tr>
+          <td>
+            потом
+            <button onclick="speak('потом')">Speak</button>
+          </td>
+          <td>potom</td>
+          <td>later</td>
+        </tr>
+        <tr>
+          <td>
+            может быть
+            <button onclick="speak('может быть')">Speak</button>
+          </td>
+          <td>mozhet byt'</td>
+          <td>maybe</td>
+        </tr>
+        <tr>
+          <td>
+            очень
+            <button onclick="speak('очень')">Speak</button>
+          </td>
+          <td>ochen</td>
+          <td>very</td>
+        </tr>
+        <tr>
+          <td>
+            много
+            <button onclick="speak('много')">Speak</button>
+          </td>
+          <td>mnogo</td>
+          <td>a lot</td>
+        </tr>
+        <tr>
+          <td>
+            мало
+            <button onclick="speak('мало')">Speak</button>
+          </td>
+          <td>malo</td>
+          <td>a little</td>
+        </tr>
+        <tr>
+          <td>
+            я люблю тебя
+            <button onclick="speak('я люблю тебя')">Speak</button>
+          </td>
+          <td>ya lyublyu tebya</td>
+          <td>I love you</td>
+        </tr>
+        <tr>
+          <td>
+            давайте
+            <button onclick="speak('давайте')">Speak</button>
+          </td>
+          <td>davaite</td>
+          <td>let's go</td>
+        </tr>
+        <tr>
+          <td>
+            мне нужно
+            <button onclick="speak('мне нужно')">Speak</button>
+          </td>
+          <td>mne nuzhno</td>
+          <td>I need</td>
+        </tr>
+        <tr>
+          <td>
+            можно
+            <button onclick="speak('можно')">Speak</button>
+          </td>
+          <td>mozhno</td>
+          <td>can</td>
+        </tr>
+        <tr>
+          <td>
+            нельзя
+            <button onclick="speak('нельзя')">Speak</button>
+          </td>
+          <td>nelzya</td>
+          <td>cannot</td>
+        </tr>
+        <tr>
+          <td>
+            вместе
+            <button onclick="speak('вместе')">Speak</button>
+          </td>
+          <td>vmeste</td>
+          <td>together</td>
+        </tr>
+        <tr>
+          <td>
+            один
+            <button onclick="speak('один')">Speak</button>
+          </td>
+          <td>odin</td>
+          <td>one</td>
+        </tr>
+        <tr>
+          <td>
+            два
+            <button onclick="speak('два')">Speak</button>
+          </td>
+          <td>dva</td>
+          <td>two</td>
+        </tr>
+        <tr>
+          <td>
+            три
+            <button onclick="speak('три')">Speak</button>
+          </td>
+          <td>tri</td>
+          <td>three</td>
+        </tr>
+        <tr>
+          <td>
+            четыре
+            <button onclick="speak('четыре')">Speak</button>
+          </td>
+          <td>chetyre</td>
+          <td>four</td>
+        </tr>
+        <tr>
+          <td>
+            пять
+            <button onclick="speak('пять')">Speak</button>
+          </td>
+          <td>pyat'</td>
+          <td>five</td>
+        </tr>
+        <tr>
+          <td>
+            шесть
+            <button onclick="speak('шесть')">Speak</button>
+          </td>
+          <td>shest</td>
+          <td>six</td>
+        </tr>
+        <tr>
+          <td>
+            семь
+            <button onclick="speak('семь')">Speak</button>
+          </td>
+          <td>sem</td>
+          <td>seven</td>
+        </tr>
+        <tr>
+          <td>
+            восемь
+            <button onclick="speak('восемь')">Speak</button>
+          </td>
+          <td>vosem</td>
+          <td>eight</td>
+        </tr>
+        <tr>
+          <td>
+            девять
+            <button onclick="speak('девять')">Speak</button>
+          </td>
+          <td>devyat</td>
+          <td>nine</td>
+        </tr>
+        <tr>
+          <td>
+            десять
+            <button onclick="speak('десять')">Speak</button>
+          </td>
+          <td>desyat</td>
+          <td>ten</td>
+        </tr>
+        <tr>
+          <td>
+            сегодня
+            <button onclick="speak('сегодня')">Speak</button>
+          </td>
+          <td>segodnya</td>
+          <td>today</td>
+        </tr>
+        <tr>
+          <td>
+            вчера
+            <button onclick="speak('вчера')">Speak</button>
+          </td>
+          <td>vchera</td>
+          <td>yesterday</td>
+        </tr>
+        <tr>
+          <td>
+            завтра
+            <button onclick="speak('завтра')">Speak</button>
+          </td>
+          <td>zavtra</td>
+          <td>tomorrow</td>
+        </tr>
+        <tr>
+          <td>
+            утро
+            <button onclick="speak('утро')">Speak</button>
+          </td>
+          <td>utro</td>
+          <td>morning</td>
+        </tr>
+        <tr>
+          <td>
+            день
+            <button onclick="speak('день')">Speak</button>
+          </td>
+          <td>den</td>
+          <td>day</td>
+        </tr>
+        <tr>
+          <td>
+            вечер
+            <button onclick="speak('вечер')">Speak</button>
+          </td>
+          <td>vecher</td>
+          <td>evening</td>
+        </tr>
+        <tr>
+          <td>
+            ночь
+            <button onclick="speak('ночь')">Speak</button>
+          </td>
+          <td>noch</td>
+          <td>night</td>
+        </tr>
+        <tr>
+          <td>
+            вода
+            <button onclick="speak('вода')">Speak</button>
+          </td>
+          <td>voda</td>
+          <td>water</td>
+        </tr>
+        <tr>
+          <td>
+            еда
+            <button onclick="speak('еда')">Speak</button>
+          </td>
+          <td>yeda</td>
+          <td>food</td>
+        </tr>
+        <tr>
+          <td>
+            хлеб
+            <button onclick="speak('хлеб')">Speak</button>
+          </td>
+          <td>khleb</td>
+          <td>bread</td>
+        </tr>
+        <tr>
+          <td>
+            молоко
+            <button onclick="speak('молоко')">Speak</button>
+          </td>
+          <td>moloko</td>
+          <td>milk</td>
+        </tr>
+        <tr>
+          <td>
+            яблоко
+            <button onclick="speak('яблоко')">Speak</button>
+          </td>
+          <td>yabloko</td>
+          <td>apple</td>
+        </tr>
+        <tr>
+          <td>
+            рыба
+            <button onclick="speak('рыба')">Speak</button>
+          </td>
+          <td>ryba</td>
+          <td>fish</td>
+        </tr>
+        <tr>
+          <td>
+            мясо
+            <button onclick="speak('мясо')">Speak</button>
+          </td>
+          <td>myaso</td>
+          <td>meat</td>
+        </tr>
+        <tr>
+          <td>
+            сахар
+            <button onclick="speak('сахар')">Speak</button>
+          </td>
+          <td>sakhar</td>
+          <td>sugar</td>
+        </tr>
+        <tr>
+          <td>
+            соль
+            <button onclick="speak('соль')">Speak</button>
+          </td>
+          <td>sol</td>
+          <td>salt</td>
+        </tr>
+        <tr>
+          <td>
+            масло
+            <button onclick="speak('масло')">Speak</button>
+          </td>
+          <td>maslo</td>
+          <td>butter</td>
+        </tr>
+        <tr>
+          <td>
+            чай
+            <button onclick="speak('чай')">Speak</button>
+          </td>
+          <td>chay</td>
+          <td>tea</td>
+        </tr>
+        <tr>
+          <td>
+            кофе
+            <button onclick="speak('кофе')">Speak</button>
+          </td>
+          <td>kofe</td>
+          <td>coffee</td>
+        </tr>
+        <tr>
+          <td>
+            суп
+            <button onclick="speak('суп')">Speak</button>
+          </td>
+          <td>sup</td>
+          <td>soup</td>
+        </tr>
+        <tr>
+          <td>
+            вино
+            <button onclick="speak('вино')">Speak</button>
+          </td>
+          <td>vino</td>
+          <td>wine</td>
+        </tr>
+        <tr>
+          <td>
+            пиво
+            <button onclick="speak('пиво')">Speak</button>
+          </td>
+          <td>pivo</td>
+          <td>beer</td>
+        </tr>
+        <tr>
+          <td>
+            картофель
+            <button onclick="speak('картофель')">Speak</button>
+          </td>
+          <td>kartofel</td>
+          <td>potato</td>
+        </tr>
+        <tr>
+          <td>
+            морковь
+            <button onclick="speak('морковь')">Speak</button>
+          </td>
+          <td>morkov</td>
+          <td>carrot</td>
+        </tr>
+        <tr>
+          <td>
+            лук
+            <button onclick="speak('лук')">Speak</button>
+          </td>
+          <td>luk</td>
+          <td>onion</td>
+        </tr>
+        <tr>
+          <td>
+            помидор
+            <button onclick="speak('помидор')">Speak</button>
+          </td>
+          <td>pomidor</td>
+          <td>tomato</td>
+        </tr>
+        <tr>
+          <td>
+            огурец
+            <button onclick="speak('огурец')">Speak</button>
+          </td>
+          <td>ogurets</td>
+          <td>cucumber</td>
+        </tr>
+        <tr>
+          <td>
+            яблочный сок
+            <button onclick="speak('яблочный сок')">Speak</button>
+          </td>
+          <td>yablochnyy sok</td>
+          <td>apple juice</td>
+        </tr>
+        <tr>
+          <td>
+            апельсиновый сок
+            <button onclick="speak('апельсиновый сок')">Speak</button>
+          </td>
+          <td>apel'sinovyy sok</td>
+          <td>orange juice</td>
+        </tr>
+        <tr>
+          <td>
+            каша
+            <button onclick="speak('каша')">Speak</button>
+          </td>
+          <td>kasha</td>
+          <td>porridge</td>
+        </tr>
+        <tr>
+          <td>
+            сметана
+            <button onclick="speak('сметана')">Speak</button>
+          </td>
+          <td>smetana</td>
+          <td>sour cream</td>
+        </tr>
+        <tr>
+          <td>
+            варенье
+            <button onclick="speak('варенье')">Speak</button>
+          </td>
+          <td>varen'ye</td>
+          <td>jam</td>
+        </tr>
+        <tr>
+          <td>
+            йогурт
+            <button onclick="speak('йогурт')">Speak</button>
+          </td>
+          <td>yogurt</td>
+          <td>yogurt</td>
+        </tr>
+        <tr>
+          <td>
+            шоколад
+            <button onclick="speak('шоколад')">Speak</button>
+          </td>
+          <td>shokolad</td>
+          <td>chocolate</td>
+        </tr>
+        <tr>
+          <td>
+            конфета
+            <button onclick="speak('конфета')">Speak</button>
+          </td>
+          <td>konfeta</td>
+          <td>candy</td>
+        </tr>
+        <tr>
+          <td>
+            печенье
+            <button onclick="speak('печенье')">Speak</button>
+          </td>
+          <td>pechen'ye</td>
+          <td>cookie</td>
+        </tr>
+        <tr>
+          <td>
+            торт
+            <button onclick="speak('торт')">Speak</button>
+          </td>
+          <td>tort</td>
+          <td>cake</td>
+        </tr>
+        <tr>
+          <td>
+            мороженое
+            <button onclick="speak('мороженое')">Speak</button>
+          </td>
+          <td>morozhenoe</td>
+          <td>ice cream</td>
+        </tr>
+        <tr>
+          <td>
+            банан
+            <button onclick="speak('банан')">Speak</button>
+          </td>
+          <td>banan</td>
+          <td>banana</td>
+        </tr>
+        <tr>
+          <td>
+            груша
+            <button onclick="speak('груша')">Speak</button>
+          </td>
+          <td>grusha</td>
+          <td>pear</td>
+        </tr>
+        <tr>
+          <td>
+            слива
+            <button onclick="speak('слива')">Speak</button>
+          </td>
+          <td>sliva</td>
+          <td>plum</td>
+        </tr>
+        <tr>
+          <td>
+            виноград
+            <button onclick="speak('виноград')">Speak</button>
+          </td>
+          <td>vinograd</td>
+          <td>grape</td>
+        </tr>
+        <tr>
+          <td>
+            арбуз
+            <button onclick="speak('арбуз')">Speak</button>
+          </td>
+          <td>arbuz</td>
+          <td>watermelon</td>
+        </tr>
+        <tr>
+          <td>
+            лимон
+            <button onclick="speak('лимон')">Speak</button>
+          </td>
+          <td>limon</td>
+          <td>lemon</td>
+        </tr>
+        <tr>
+          <td>
+            перец
+            <button onclick="speak('перец')">Speak</button>
+          </td>
+          <td>perets</td>
+          <td>pepper</td>
+        </tr>
+        <tr>
+          <td>
+            баклажан
+            <button onclick="speak('баклажан')">Speak</button>
+          </td>
+          <td>baklazhan</td>
+          <td>eggplant</td>
+        </tr>
+        <tr>
+          <td>
+            капуста
+            <button onclick="speak('капуста')">Speak</button>
+          </td>
+          <td>kapusta</td>
+          <td>cabbage</td>
+        </tr>
+        <tr>
+          <td>
+            чеснок
+            <button onclick="speak('чеснок')">Speak</button>
+          </td>
+          <td>chesnok</td>
+          <td>garlic</td>
+        </tr>
+        <tr>
+          <td>
+            гриб
+            <button onclick="speak('гриб')">Speak</button>
+          </td>
+          <td>grib</td>
+          <td>mushroom</td>
+        </tr>
+        <tr>
+          <td>
+            огурец
+            <button onclick="speak('огурец')">Speak</button>
+          </td>
+          <td>ogurets</td>
+          <td>cucumber</td>
+        </tr>
+        <tr>
+          <td>
+            спаржа
+            <button onclick="speak('спаржа')">Speak</button>
+          </td>
+          <td>sparzha</td>
+          <td>asparagus</td>
+        </tr>
+        <tr>
+          <td>
+            редис
+            <button onclick="speak('редис')">Speak</button>
+          </td>
+          <td>redis</td>
+          <td>radish</td>
+        </tr>
+        <tr>
+          <td>
+            свекла
+            <button onclick="speak('свекла')">Speak</button>
+          </td>
+          <td>svekla</td>
+          <td>beet</td>
+        </tr>
+        <tr>
+          <td>
+            салат
+            <button onclick="speak('салат')">Speak</button>
+          </td>
+          <td>salat</td>
+          <td>salad</td>
+        </tr>
+        <tr>
+          <td>
+            кукуруза
+            <button onclick="speak('кукуруза')">Speak</button>
+          </td>
+          <td>kukuruza</td>
+          <td>corn</td>
+        </tr>
+        <tr>
+          <td>
+            фасоль
+            <button onclick="speak('фасоль')">Speak</button>
+          </td>
+          <td>fasol</td>
+          <td>bean</td>
+        </tr>
+        <tr>
+          <td>
+            горох
+            <button onclick="speak('горох')">Speak</button>
+          </td>
+          <td>gorokh</td>
+          <td>pea</td>
+        </tr>
+        <tr>
+          <td>
+            слово
+            <button onclick="speak('слово')">Speak</button>
+          </td>
+          <td>slovo</td>
+          <td>word</td>
+        </tr>
+        <tr>
+          <td>
+            книга
+            <button onclick="speak('книга')">Speak</button>
+          </td>
+          <td>kniga</td>
+          <td>book</td>
+        </tr>
+        <tr>
+          <td>
+            письмо
+            <button onclick="speak('письмо')">Speak</button>
+          </td>
+          <td>pis'mo</td>
+          <td>letter</td>
+        </tr>
+        <tr>
+          <td>
+            ручка
+            <button onclick="speak('ручка')">Speak</button>
+          </td>
+          <td>ruchka</td>
+          <td>pen</td>
+        </tr>
+        <tr>
+          <td>
+            стол
+            <button onclick="speak('стол')">Speak</button>
+          </td>
+          <td>stol</td>
+          <td>table</td>
+        </tr>
+        <tr>
+          <td>
+            стул
+            <button onclick="speak('стул')">Speak</button>
+          </td>
+          <td>stul</td>
+          <td>chair</td>
+        </tr>
+        <tr>
+          <td>
+            окно
+            <button onclick="speak('окно')">Speak</button>
+          </td>
+          <td>okno</td>
+          <td>window</td>
+        </tr>
+        <tr>
+          <td>
+            дверь
+            <button onclick="speak('дверь')">Speak</button>
+          </td>
+          <td>dver'</td>
+          <td>door</td>
+        </tr>
+        <tr>
+          <td>
+            дом
+            <button onclick="speak('дом')">Speak</button>
+          </td>
+          <td>dom</td>
+          <td>house</td>
+        </tr>
+        <tr>
+          <td>
+            квартира
+            <button onclick="speak('квартира')">Speak</button>
+          </td>
+          <td>kvartira</td>
+          <td>apartment</td>
+        </tr>
+        <tr>
+          <td>
+            улица
+            <button onclick="speak('улица')">Speak</button>
+          </td>
+          <td>ulitsa</td>
+          <td>street</td>
+        </tr>
+        <tr>
+          <td>
+            город
+            <button onclick="speak('город')">Speak</button>
+          </td>
+          <td>gorod</td>
+          <td>city</td>
+        </tr>
+        <tr>
+          <td>
+            деревня
+            <button onclick="speak('деревня')">Speak</button>
+          </td>
+          <td>derevnya</td>
+          <td>village</td>
+        </tr>
+        <tr>
+          <td>
+            страна
+            <button onclick="speak('страна')">Speak</button>
+          </td>
+          <td>strana</td>
+          <td>country</td>
+        </tr>
+        <tr>
+          <td>
+            мир
+            <button onclick="speak('мир')">Speak</button>
+          </td>
+          <td>mir</td>
+          <td>world</td>
+        </tr>
+        <tr>
+          <td>
+            школа
+            <button onclick="speak('школа')">Speak</button>
+          </td>
+          <td>shkola</td>
+          <td>school</td>
+        </tr>
+        <tr>
+          <td>
+            университет
+            <button onclick="speak('университет')">Speak</button>
+          </td>
+          <td>universitet</td>
+          <td>university</td>
+        </tr>
+        <tr>
+          <td>
+            магазин
+            <button onclick="speak('магазин')">Speak</button>
+          </td>
+          <td>magazin</td>
+          <td>store</td>
+        </tr>
+        <tr>
+          <td>
+            ресторан
+            <button onclick="speak('ресторан')">Speak</button>
+          </td>
+          <td>restoran</td>
+          <td>restaurant</td>
+        </tr>
+        <tr>
+          <td>
+            кафе
+            <button onclick="speak('кафе')">Speak</button>
+          </td>
+          <td>kafe</td>
+          <td>cafe</td>
+        </tr>
+        <tr>
+          <td>
+            больница
+            <button onclick="speak('больница')">Speak</button>
+          </td>
+          <td>bol'nitsa</td>
+          <td>hospital</td>
+        </tr>
+        <tr>
+          <td>
+            библиотека
+            <button onclick="speak('библиотека')">Speak</button>
+          </td>
+          <td>biblioteka</td>
+          <td>library</td>
+        </tr>
+        <tr>
+          <td>
+            кинотеатр
+            <button onclick="speak('кинотеатр')">Speak</button>
+          </td>
+          <td>kinoteatr</td>
+          <td>cinema</td>
+        </tr>
+        <tr>
+          <td>
+            театр
+            <button onclick="speak('театр')">Speak</button>
+          </td>
+          <td>teatr</td>
+          <td>theater</td>
+        </tr>
+        <tr>
+          <td>
+            музей
+            <button onclick="speak('музей')">Speak</button>
+          </td>
+          <td>muzey</td>
+          <td>museum</td>
+        </tr>
+        <tr>
+          <td>
+            парк
+            <button onclick="speak('парк')">Speak</button>
+          </td>
+          <td>park</td>
+          <td>park</td>
+        </tr>
+        <tr>
+          <td>
+            сад
+            <button onclick="speak('сад')">Speak</button>
+          </td>
+          <td>sad</td>
+          <td>garden</td>
+        </tr>
+        <tr>
+          <td>
+            лес
+            <button onclick="speak('лес')">Speak</button>
+          </td>
+          <td>les</td>
+          <td>forest</td>
+        </tr>
+        <tr>
+          <td>
+            река
+            <button onclick="speak('река')">Speak</button>
+          </td>
+          <td>reka</td>
+          <td>river</td>
+        </tr>
+        <tr>
+          <td>
+            озеро
+            <button onclick="speak('озеро')">Speak</button>
+          </td>
+          <td>ozero</td>
+          <td>lake</td>
+        </tr>
+        <tr>
+          <td>
+            море
+            <button onclick="speak('море')">Speak</button>
+          </td>
+          <td>more</td>
+          <td>sea</td>
+        </tr>
+        <tr>
+          <td>
+            океан
+            <button onclick="speak('океан')">Speak</button>
+          </td>
+          <td>okean</td>
+          <td>ocean</td>
+        </tr>
+        <tr>
+          <td>
+            гора
+            <button onclick="speak('гора')">Speak</button>
+          </td>
+          <td>gora</td>
+          <td>mountain</td>
+        </tr>
+        <tr>
+          <td>
+            воздух
+            <button onclick="speak('воздух')">Speak</button>
+          </td>
+          <td>vozdukh</td>
+          <td>air</td>
+        </tr>
+        <tr>
+          <td>
+            огонь
+            <button onclick="speak('огонь')">Speak</button>
+          </td>
+          <td>ogon'</td>
+          <td>fire</td>
+        </tr>
+        <tr>
+          <td>
+            вода
+            <button onclick="speak('вода')">Speak</button>
+          </td>
+          <td>voda</td>
+          <td>water</td>
+        </tr>
+        <tr>
+          <td>
+            земля
+            <button onclick="speak('земля')">Speak</button>
+          </td>
+          <td>zemlya</td>
+          <td>earth</td>
+        </tr>
+        <tr>
+          <td>
+            небо
+            <button onclick="speak('небо')">Speak</button>
+          </td>
+          <td>nebo</td>
+          <td>sky</td>
+        </tr>
+        <tr>
+          <td>
+            звезда
+            <button onclick="speak('звезда')">Speak</button>
+          </td>
+          <td>zvezda</td>
+          <td>star</td>
+        </tr>
+        <tr>
+          <td>
+            Привет!
+            <button onclick="speak('Привет!')">Speak</button>
+          </td>
+          <td>Privet!</td>
+          <td>Hello!</td>
+        </tr>
+        <tr>
+          <td>
+            Я работаю...
+            <button onclick="speak('Ya rabotayu...')">Speak</button>
+          </td>
+          <td>Ya rabotayu</td>
+          <td>I work...</td>
+        </tr>
+        <tr>
+          <td>
+            Я учусь...
+            <button onclick="speak('Ya uchus...')">Speak</button>
+          </td>
+          <td>Ya uchus</td>
+          <td>I study...</td>
+        </tr>
+        <tr>
+          <td>
+            Я путешествую...
+            <button onclick="speak('Ya puteshestvuyu...')">Speak</button>
+          </td>
+          <td>Ya puteshestvuyu</td>
+          <td>I travel...</td>
+        </tr>
+        <tr>
+          <td>
+            Я отдыхаю...
+            <button onclick="speak('Ya otdixayu...')">Speak</button>
+          </td>
+          <td>Ya otdixayu</td>
+          <td>I am relaxing...</td>
+        </tr>
+        <tr>
+          <td>
+            Я готовлю...
+            <button onclick="speak('Ya gotovlyu...')">Speak</button>
+          </td>
+          <td>Ya gotovlyu</td>
+          <td>I am cooking...</td>
+        </tr>
+        <tr>
+          <td>
+            Я ем...
+            <button onclick="speak('Ya yem...')">Speak</button>
+          </td>
+          <td>Ya yem</td>
+          <td>I am eating...</td>
+        </tr>
+        <tr>
+          <td>
+            Я пью...
+            <button onclick="speak('Ya pyu...')">Speak</button>
+          </td>
+          <td>Ya pyu</td>
+          <td>I am drinking...</td>
+        </tr>
+        <tr>
+          <td>
+            Я сплю...
+            <button onclick="speak('Ya splyu...')">Speak</button>
+          </td>
+          <td>Ya splyu</td>
+          <td>I am sleeping...</td>
+        </tr>
+        <tr>
+          <td>
+            Я смотрю...
+            <button onclick="speak('Ya smotryu...')">Speak</button>
+          </td>
+          <td>Ya smotryu</td>
+          <td>I am watching...</td>
+        </tr>
+        <tr>
+          <td>
+            Я слушаю...
+            <button onclick="speak('Ya slushayu...')">Speak</button>
+          </td>
+          <td>Ya slushayu</td>
+          <td>I am listening...</td>
+        </tr>
+        <tr>
+          <td>
+            Я читаю...
+            <button onclick="speak('Ya chitayu...')">Speak</button>
+          </td>
+          <td>Ya chitayu</td>
+          <td>I am reading...</td>
+        </tr>
+        <tr>
+          <td>
+            Я пишу...
+            <button onclick="speak('Ya pishu...')">Speak</button>
+          </td>
+          <td>Ya pishu</td>
+          <td>I am writing...</td>
+        </tr>
+        <tr>
+          <td>
+            Я говорю...
+            <button onclick="speak('Ya govoryu...')">Speak</button>
+          </td>
+          <td>Ya govoryu</td>
+          <td>I am speaking...</td>
+        </tr>
+        <tr>
+          <td>
+            Я хожу...
+            <button onclick="speak('Ya khozhu...')">Speak</button>
+          </td>
+          <td>Ya khozhu</td>
+          <td>I am walking...</td>
+        </tr>
+        <tr>
+          <td>
+            Я бегу...
+            <button onclick="speak('Ya begu...')">Speak</button>
+          </td>
+          <td>Ya begu</td>
+          <td>I am running...</td>
+        </tr>
+        <tr>
+          <td>
+            Я сижу...
+            <button onclick="speak('Ya sizhu...')">Speak</button>
+          </td>
+          <td>Ya sizhu</td>
+          <td>I am sitting...</td>
+        </tr>
+        <tr>
+          <td>
+            Я стою...
+            <button onclick="speak('Ya stoyu...')">Speak</button>
+          </td>
+          <td>Ya stoyu</td>
+          <td>I am standing...</td>
+        </tr>
+        <tr>
+          <td>
+            Я играю...
+            <button onclick="speak('Ya igrayu...')">Speak</button>
+          </td>
+          <td>Ya igrayu</td>
+          <td>I am playing...</td>
+        </tr>
+        <tr>
+          <td>
+            Я танцую...
+            <button onclick="speak('Ya tantuyu...')">Speak</button>
+          </td>
+          <td>Ya tantuyu</td>
+          <td>I am dancing...</td>
+        </tr>
+        <tr>
+          <td>
+            Я пою...
+            <button onclick="speak('Ya poyu...')">Speak</button>
+          </td>
+          <td>Ya poyu</td>
+          <td>I am singing...</td>
+        </tr>
+        <tr>
+          <td>
+            Я рисую...
+            <button onclick="speak('Ya risuyu...')">Speak</button>
+          </td>
+          <td>Ya risuyu</td>
+          <td>I am drawing...</td>
+        </tr>
+        <tr>
+          <td>
+            Я фотографирую...
+            <button onclick="speak('Ya fotografiroyu...')">Speak</button>
+          </td>
+          <td>Ya fotografiroyu</td>
+          <td>I am taking pictures...</td>
+        </tr>
+        <tr>
+          <td>
+            Я люблю кофе.
+            <button onclick="speak('Ya lyublyu kofe.')">Speak</button>
+          </td>
+          <td>Ya lyublyu kofe</td>
+          <td>I love coffee.</td>
+        </tr>
+        <tr>
+          <td>
+            Я люблю чай.
+            <button onclick="speak('Ya lyublyu chay.')">Speak</button>
+          </td>
+          <td>Ya lyublyu chay</td>
+          <td>I love tea.</td>
+        </tr>
+        <tr>
+          <td>
+            Я люблю мороженое.
+            <button onclick="speak('Ya lyublyu morozhenoe.')">Speak</button>
+          </td>
+          <td>Ya lyublyu morozhenoe</td>
+          <td>I love ice cream.</td>
+        </tr>
+        <tr>
+          <td>
+            Я люблю шоколад.
+            <button onclick="speak('Ya lyublyu shokolad.')">Speak</button>
+          </td>
+          <td>Ya lyublyu shokolad</td>
+          <td>I love chocolate.</td>
+        </tr>
+        <tr>
+          <td>
+            Я люблю фрукты.
+            <button onclick="speak('Ya lyublyu frukty.')">Speak</button>
+          </td>
+          <td>Ya lyublyu frukty</td>
+          <td>I love fruit.</td>
+        </tr>
+        <tr>
+          <td>
+            Я люблю овощи.
+            <button onclick="speak('Ya lyublyu ovoschi.')">Speak</button>
+          </td>
+          <td>Ya lyublyu ovoschi</td>
+          <td>I love vegetables.</td>
+        </tr>
+        <tr>
+          <td>
+            Я люблю музыку.
+            <button onclick="speak('Ya lyublyu muzyku.')">Speak</button>
+          </td>
+          <td>Ya lyublyu muzyku</td>
+          <td>I love music.</td>
+        </tr>
+        <tr>
+          <td>
+            Я люблю кино.
+            <button onclick="speak('Ya lyublyu kino.')">Speak</button>
+          </td>
+          <td>Ya lyublyu kino</td>
+          <td>I love movies.</td>
+        </tr>
+        <tr>
+          <td>
+            Я люблю книги.
+            <button onclick="speak('Ya lyublyu knigi.')">Speak</button>
+          </td>
+          <td>Ya lyublyu knigi</td>
+          <td>I love books.</td>
+        </tr>
+        <tr>
+          <td>
+            Я люблю животных.
+            <button onclick="speak('Ya lyublyu zhivotnykh.')">Speak</button>
+          </td>
+          <td>Ya lyublyu zhivotnykh</td>
+          <td>I love animals.</td>
+        </tr>
+        <tr>
+          <td>
+            Я люблю природу.
+            <button onclick="speak('Ya lyublyu prirodu.')">Speak</button>
+          </td>
+          <td>Ya lyublyu prirodu</td>
+          <td>I love nature.</td>
+        </tr>
+        <tr>
+          <td>
+            Я люблю путешествовать.
+            <button onclick="speak('Ya lyublyu puteshestvovat.')">Speak</button>
+          </td>
+          <td>Ya lyublyu puteshestvovat</td>
+          <td>I love to travel.</td>
+        </tr>
+        <tr>
+          <td>
+            Я люблю учиться.
+            <button onclick="speak('Ya lyublyu uchitsya.')">Speak</button>
+          </td>
+          <td>Ya lyublyu uchitsya</td>
+          <td>I love to learn.</td>
+        </tr>
+        <tr>
+          <td>
+            Я люблю работать.
+            <button onclick="speak('Ya lyublyu rabotat.')">Speak</button>
+          </td>
+          <td>Ya lyublyu rabotat</td>
+          <td>I love to work.</td>
+        </tr>
+        <tr>
+          <td>
+            Я люблю помогать людям.
+            <button onclick="speak('Ya lyublyu pomogat lyudyam.')">
+              Speak
+            </button>
+          </td>
+          <td>Ya lyublyu pomogat lyudyam</td>
+          <td>I love to help people.</td>
+        </tr>
+
+        <tr>
+          <td>
+            Как дела?
+            <button onclick="speak('Как дела?')">Speak</button>
+          </td>
+          <td>Kak dela?</td>
+          <td>How are you?</td>
+        </tr>
+        <tr>
+          <td>
+            Что это?
+            <button onclick="speak('Что это?')">Speak</button>
+          </td>
+          <td>Chto eto?</td>
+          <td>What is this?</td>
+        </tr>
+        <tr>
+          <td>
+            Я люблю кофе.
+            <button onclick="speak('Я люблю кофе.')">Speak</button>
+          </td>
+          <td>Ya lyublyu kofe.</td>
+          <td>I like coffee.</td>
+        </tr>
+        <tr>
+          <td>
+            Спасибо большое!
+            <button onclick="speak('Спасибо большое!')">Speak</button>
+          </td>
+          <td>Spasibo bol'shoe!</td>
+          <td>Thank you very much!</td>
+        </tr>
+        <tr>
+          <td>
+            Где туалет?
+            <button onclick="speak('Где туалет?')">Speak</button>
+          </td>
+          <td>Gde tualet?</td>
+          <td>Where is the bathroom?</td>
+        </tr>
+        <tr>
+          <td>
+            Как тебя зовут?
+            <button onclick="speak('Как тебя зовут?')">Speak</button>
+          </td>
+          <td>Kak tebya zovut?</td>
+          <td>What is your name?</td>
+        </tr>
+        <tr>
+          <td>
+            Сколько это стоит?
+            <button onclick="speak('Сколько это стоит?')">Speak</button>
+          </td>
+          <td>Skol'ko eto stoit?</td>
+          <td>How much does it cost?</td>
+        </tr>
+        <tr>
+          <td>
+            Я не понимаю.
+            <button onclick="speak('Я не понимаю.')">Speak</button>
+          </td>
+          <td>Ya ne ponimayu.</td>
+          <td>I don't understand.</td>
+        </tr>
+        <tr>
+          <td>
+            Где я могу найти такси?
+            <button onclick="speak('Где я могу найти такси?')">Speak</button>
+          </td>
+          <td>Gde ya mogu nayti taksi?</td>
+          <td>Where can I find a taxi?</td>
+        </tr>
+        <tr>
+          <td>
+            Какой сегодня день?
+            <button onclick="speak('Какой сегодня день?')">Speak</button>
+          </td>
+          <td>Kakoy segodnya den'?</td>
+          <td>What day is today?</td>
+        </tr>
+        <tr>
+          <td>
+            Я изучаю русский язык.
+            <button onclick="speak('Я изучаю русский язык.')">Speak</button>
+          </td>
+          <td>Ya izuchayu russkiy yazyk.</td>
+          <td>I am learning Russian.</td>
+        </tr>
+        <tr>
+          <td>
+            У меня есть вопрос.
+            <button onclick="speak('У меня есть вопрос.')">Speak</button>
+          </td>
+          <td>U menya est' vopros.</td>
+          <td>I have a question.</td>
+        </tr>
+        <tr>
+          <td>
+            Это очень интересно!
+            <button onclick="speak('Это очень интересно!')">Speak</button>
+          </td>
+          <td>Eto ochen' interesno!</td>
+          <td>That's very interesting!</td>
+        </tr>
+        <tr>
+          <td>
+            Пожалуйста, подождите немного.
+            <button onclick="speak('Пожалуйста, подождите немного.')">
+              Speak
+            </button>
+          </td>
+          <td>Pozhaluysta, podozhdite nemnogo.</td>
+          <td>Please wait a moment.</td>
+        </tr>
+        <tr>
+          <td>
+            Как погода сегодня?
+            <button onclick="speak('Как погода сегодня?')">Speak</button>
+          </td>
+          <td>Kak pogoda segodnya?</td>
+          <td>How is the weather today?</td>
+        </tr>
+        <tr>
+          <td>
+            Что ты делаешь?
+            <button onclick="speak('Что ты делаешь?')">Speak</button>
+          </td>
+          <td>Chto ty delayesh'?</td>
+          <td>What are you doing?</td>
+        </tr>
+        <tr>
+          <td>
+            У меня есть много работы.
+            <button onclick="speak('У меня есть много работы.')">Speak</button>
+          </td>
+          <td>U menya est' mnogo raboty.</td>
+          <td>I have a lot of work.</td>
+        </tr>
+        <tr>
+          <td>
+            Чем ты занимаешься?
+            <button onclick="speak('Чем ты занимаешься?')">Speak</button>
+          </td>
+          <td>Chem ty zanimaesh'sya?</td>
+          <td>What do you do?</td>
+        </tr>
+        <tr>
+          <td>
+            Это очень вкусно!
+            <button onclick="speak('Это очень вкусно!')">Speak</button>
+          </td>
+          <td>Eto ochen' vkusno!</td>
+          <td>It's very delicious!</td>
+        </tr>
+        <tr>
+          <td>
+            Какие у вас планы на выходные?
+            <button onclick="speak('Какие у вас планы на выходные?')">
+              Speak
+            </button>
+          </td>
+          <td>Kakie u vas plany na vykhodnye?</td>
+          <td>What are your plans for the weekend?</td>
+        </tr>
+        <tr>
+          <td>
+            Откуда ты?
+            <button onclick="speak('Откуда ты?')">Speak</button>
+          </td>
+          <td>Otkuda ty?</td>
+          <td>Where are you from?</td>
+        </tr>
+        <tr>
+          <td>
+            Что ты хочешь сделать сегодня?
+            <button onclick="speak('Что ты хочешь сделать сегодня?')">
+              Speak
+            </button>
+          </td>
+          <td>Chto ty khochesh' sdelat' segodnya?</td>
+          <td>What do you want to do today?</td>
+        </tr>
+        <tr>
+          <td>
+            Это было забавно!
+            <button onclick="speak('Это было забавно!')">Speak</button>
+          </td>
+          <td>Eto bylo zabavno!</td>
+          <td>It was fun!</td>
+        </tr>
+        <tr>
+          <td>
+            Что это значит?
+            <button onclick="speak('Что это значит?')">Speak</button>
+          </td>
+          <td>Chto eto znachit?</td>
+          <td>What does it mean?</td>
+        </tr>
+        <tr>
+          <td>
+            У меня есть кот.
+            <button onclick="speak('У меня есть кот.')">Speak</button>
+          </td>
+          <td>U menya est' kot.</td>
+          <td>I have a cat.</td>
+        </tr>
+        <tr>
+          <td>
+            Я голоден.
+            <button onclick="speak('Я голоден.')">Speak</button>
+          </td>
+          <td>Ya goloden.</td>
+          <td>I am hungry.</td>
+        </tr>
+        <tr>
+          <td>
+            Я хочу пить.
+            <button onclick="speak('Я хочу пить.')">Speak</button>
+          </td>
+          <td>Ya khochu pit'.</td>
+          <td>I want to drink.</td>
+        </tr>
+        <tr>
+          <td>
+            Это трудно.
+            <button onclick="speak('Это трудно.')">Speak</button>
+          </td>
+          <td>Eto trudno.</td>
+          <td>It's difficult.</td>
+        </tr>
+        <tr>
+          <td>
+            Я рад видеть тебя.
+            <button onclick="speak('Я рад видеть тебя.')">Speak</button>
+          </td>
+          <td>Ya rad videt' tebya.</td>
+          <td>I'm glad to see you.</td>
+        </tr>
+        <tr>
+          <td>
+            Что происходит?
+            <button onclick="speak('Что происходит?')">Speak</button>
+          </td>
+          <td>Chto proiskhodit?</td>
+          <td>What's happening?</td>
+        </tr>
+        <tr>
+          <td>
+            Мне нужна помощь.
+            <button onclick="speak('Мне нужна помощь.')">Speak</button>
+          </td>
+          <td>Mne nuzhna pomoshch'.</td>
+          <td>I need help.</td>
+        </tr>
+        <tr>
+          <td>
+            Как тебя зовут?
+            <button onclick="speak('Как тебя зовут?')">Speak</button>
+          </td>
+          <td>Kak tebya zovut?</td>
+          <td>What is your name?</td>
+        </tr>
+        <tr>
+          <td>
+            Где ты живешь?
+            <button onclick="speak('Где ты живешь?')">Speak</button>
+          </td>
+          <td>Gde ty zhivesh'?</td>
+          <td>Where do you live?</td>
+        </tr>
+        <tr>
+          <td>
+            Какой твой любимый цвет?
+            <button onclick="speak('Какой твой любимый цвет?')">Speak</button>
+          </td>
+          <td>Kakoy tvoy lyubimyy tsvet?</td>
+          <td>What is your favorite color?</td>
+        </tr>
+        <tr>
+          <td>
+            Что ты делаешь сегодня вечером?
+            <button onclick="speak('Что ты делаешь сегодня вечером?')">
+              Speak
+            </button>
+          </td>
+          <td>Chto ty delayesh' segodnya vecherom?</td>
+          <td>What are you doing tonight?</td>
+        </tr>
+        <tr>
+          <td>
+            Какой у тебя номер телефона?
+            <button onclick="speak('Какой у тебя номер телефона?')">
+              Speak
+            </button>
+          </td>
+          <td>Kakoy u tebya nomer telefona?</td>
+          <td>What is your phone number?</td>
+        </tr>
+        <tr>
+          <td>
+            Мне нравится этот город.
+            <button onclick="speak('Мне нравится этот город.')">Speak</button>
+          </td>
+          <td>Mne nravitsya etot gorod.</td>
+          <td>I like this city.</td>
+        </tr>
+        <tr>
+          <td>
+            Когда ты родился?
+            <button onclick="speak('Когда ты родился?')">Speak</button>
+          </td>
+          <td>Kogda ty rodilsya?</td>
+          <td>When were you born?</td>
+        </tr>
+        <tr>
+          <td>
+            Сколько тебе лет?
+            <button onclick="speak('Сколько тебе лет?')">Speak</button>
+          </td>
+          <td>Skol'ko tebe let?</td>
+          <td>How old are you?</td>
+        </tr>
+        <tr>
+          <td>
+            Я изучаю русский язык.
+            <button onclick="speak('Я изучаю русский язык.')">Speak</button>
+          </td>
+          <td>Ya izuchayu russkiy yazyk.</td>
+          <td>I am learning Russian.</td>
+        </tr>
+        <tr>
+          <td>
+            Что это за место?
+            <button onclick="speak('Что это за место?')">Speak</button>
+          </td>
+          <td>Chto eto za mesto?</td>
+          <td>What is this place?</td>
+        </tr>
+        <tr>
+          <td>
+            Можно взять меню?
+            <button onclick="speak('Можно взять меню?')">Speak</button>
+          </td>
+          <td>Mozhno vzyat' menyu?</td>
+          <td>Can I have the menu?</td>
+        </tr>
+        <tr>
+          <td>
+            Где можно найти магазин?
+            <button onclick="speak('Где можно найти магазин?')">Speak</button>
+          </td>
+          <td>Gde mozhno nayti magazin?</td>
+          <td>Where can I find a store?</td>
+        </tr>
+        <tr>
+          <td>
+            Как я могу добраться до центра города?
+            <button onclick="speak('Как я могу добраться до центра города?')">
+              Speak
+            </button>
+          </td>
+          <td>Kak ya mogu dobrat'sya do tsentra goroda?</td>
+          <td>How can I get to the city center?</td>
+        </tr>
+        <tr>
+          <td>
+            Что это за машина?
+            <button onclick="speak('Что это за машина?')">Speak</button>
+          </td>
+          <td>Chto eto za mashina?</td>
+          <td>What kind of car is this?</td>
+        </tr>
+        <tr>
+          <td>
+            Какая сегодня погода?
+            <button onclick="speak('Какая сегодня погода?')">Speak</button>
+          </td>
+          <td>Kakaya segodnya pogoda?</td>
+          <td>What's the weather like today?</td>
+        </tr>
+        <tr>
+          <td>
+            Какая у вас семья?
+            <button onclick="speak('Какая у вас семья?')">Speak</button>
+          </td>
+          <td>Kakaya u vas sem'ya?</td>
+          <td>What is your family like?</td>
+        </tr>
+        <tr>
+          <td>
+            Где находится аэропорт?
+            <button onclick="speak('Где находится аэропорт?')">Speak</button>
+          </td>
+          <td>Gde nakhoditsya aeroport?</td>
+          <td>Where is the airport located?</td>
+        </tr>
+        <tr>
+          <td>
+            Я люблю этот город.
+            <button onclick="speak('Я люблю этот город.')">Speak</button>
+          </td>
+          <td>Ya lyublyu etot gorod.</td>
+          <td>I love this city.</td>
+        </tr>
+        <tr>
+          <td>
+            Сколько времени?
+            <button onclick="speak('Сколько времени?')">Speak</button>
+          </td>
+          <td>Skol'ko vremeni?</td>
+          <td>What time is it?</td>
+        </tr>
+        <tr>
+          <td>
+            Как ты себя чувствуешь?
+            <button onclick="speak('Как ты себя чувствуешь?')">Speak</button>
+          </td>
+          <td>Kak ty sebya chuvstvuesh'?</td>
+          <td>How are you feeling?</td>
+        </tr>
+        <tr>
+          <td>
+            Что ты думаешь об этом?
+            <button onclick="speak('Что ты думаешь об этом?')">Speak</button>
+          </td>
+          <td>Chto ty dumayesh' ob etom?</td>
+          <td>What do you think about this?</td>
+        </tr>
+        <tr>
+          <td>
+            Я не знаю.
+            <button onclick="speak('Я не знаю.')">Speak</button>
+          </td>
+          <td>Ya ne znayu.</td>
+          <td>I don't know.</td>
+        </tr>
+        <tr>
+          <td>
+            Что ты хочешь есть?
+            <button onclick="speak('Что ты хочешь есть?')">Speak</button>
+          </td>
+          <td>Chto ty khochesh' est'?</td>
+          <td>What do you want to eat?</td>
+        </tr>
+        <tr>
+          <td>
+            Какой твой любимый фильм?
+            <button onclick="speak('Какой твой любимый фильм?')">Speak</button>
+          </td>
+          <td>Kakoy tvoy lyubimyy film?</td>
+          <td>What is your favorite movie?</td>
+        </tr>
+        <tr>
+          <td>
+            Как ты провел выходные?
+            <button onclick="speak('Как ты провел выходные?')">Speak</button>
+          </td>
+          <td>Kak ty provel vykhodnye?</td>
+          <td>How did you spend the weekend?</td>
+        </tr>
+        <tr>
+          <td>
+            Что ты будешь делать завтра?
+            <button onclick="speak('Что ты будешь делать завтра?')">
+              Speak
+            </button>
+          </td>
+          <td>Chto ty budesh' delat' zavtra?</td>
+          <td>What are you going to do tomorrow?</td>
+        </tr>
+        <tr>
+          <td>
+            Я сегодня занят.
+            <button onclick="speak('Я сегодня занят.')">Speak</button>
+          </td>
+          <td>Ya segodnya zanyat.</td>
+          <td>I'm busy today.</td>
+        </tr>
+        <tr>
+          <td>
+            Я хочу учиться русскому лучше.
+            <button onclick="speak('Я хочу учиться русскому лучше.')">
+              Speak
+            </button>
+          </td>
+          <td>Ya khochu uchit'sya russkomu luchshe.</td>
+          <td>I want to learn Russian better.</td>
+        </tr>
+        <tr>
+          <td>
+            Где можно снять номер в отеле?
+            <button onclick="speak('Где можно снять номер в отеле?')">
+              Speak
+            </button>
+          </td>
+          <td>Gde mozhno snyat' nomer v otele?</td>
+          <td>Where can I get a room in a hotel?</td>
+        </tr>
+        <tr>
+          <td>
+            Как ты сюда попал?
+            <button onclick="speak('Как ты сюда попал?')">Speak</button>
+          </td>
+          <td>Kak ty syuda popal?</td>
+          <td>How did you get here?</td>
+        </tr>
+        <tr>
+          <td>
+            Что это за блюдо?
+            <button onclick="speak('Что это за блюдо?')">Speak</button>
+          </td>
+          <td>Chto eto za blyudo?</td>
+          <td>What is this dish?</td>
+        </tr>
+        <tr>
+          <td>
+            Сколько здесь народу?
+            <button onclick="speak('Сколько здесь народу?')">Speak</button>
+          </td>
+          <td>Skol'ko zdes' narodu?</td>
+          <td>How many people are here?</td>
+        </tr>
+        <tr>
+          <td>
+            Как доехать до музея?
+            <button onclick="speak('Как доехать до музея?')">Speak</button>
+          </td>
+          <td>Kak doekhat' do muzea?</td>
+          <td>How to get to the museum?</td>
+        </tr>
+        <tr>
+          <td>
+            Где можно найти Wi-Fi?
+            <button onclick="speak('Где можно найти Wi-Fi?')">Speak</button>
+          </td>
+          <td>Gde mozhno nayti Wi-Fi?</td>
+          <td>Where can I find Wi-Fi?</td>
+        </tr>
+        <tr>
+          <td>
+            Что это за кафе?
+            <button onclick="speak('Что это за кафе?')">Speak</button>
+          </td>
+          <td>Chto eto za kafe?</td>
+          <td>What is this cafe?</td>
+        </tr>
+        <tr>
+          <td>
+            Почему это произошло?
+            <button onclick="speak('Почему это произошло?')">Speak</button>
+          </td>
+          <td>Pochemu eto proizoshlo?</td>
+          <td>Why did this happen?</td>
+        </tr>
+        <tr>
+          <td>
+            Я не понимаю это правило.
+            <button onclick="speak('Я не понимаю это правило.')">Speak</button>
+          </td>
+          <td>Ya ne ponimayu eto pravilo.</td>
+          <td>I don't understand this rule.</td>
+        </tr>
+        <tr>
+          <td>
+            Когда закрывается магазин?
+            <button onclick="speak('Когда закрывается магазин?')">Speak</button>
+          </td>
+          <td>Kogda zakryvaetsya magazin?</td>
+          <td>When does the store close?</td>
+        </tr>
+        <tr>
+          <td>
+            Что это за музыка?
+            <button onclick="speak('Что это за музыка?')">Speak</button>
+          </td>
+          <td>Chto eto za muzyka?</td>
+          <td>What kind of music is this?</td>
+        </tr>
+        <tr>
+          <td>
+            Какой у вас любимый ресторан?
+            <button onclick="speak('Какой у вас любимый ресторан?')">
+              Speak
+            </button>
+          </td>
+          <td>Kakoy u vas lyubimyy restoran?</td>
+          <td>What is your favorite restaurant?</td>
+        </tr>
+        <tr>
+          <td>
+            Это очень интересный фильм.
+            <button onclick="speak('Это очень интересный фильм.')">
+              Speak
+            </button>
+          </td>
+          <td>Eto ochen' interesnyy film.</td>
+          <td>This is a very interesting movie.</td>
+        </tr>
+        <tr>
+          <td>
+            Как тебе эта книга?
+            <button onclick="speak('Как тебе эта книга?')">Speak</button>
+          </td>
+          <td>Kak tebe eta kniga?</td>
+          <td>How do you like this book?</td>
+        </tr>
+        <tr>
+          <td>
+            Что это за шум?
+            <button onclick="speak('Что это за шум?')">Speak</button>
+          </td>
+          <td>Chto eto za shum?</td>
+          <td>What is this noise?</td>
+        </tr>
+        <tr>
+          <td>
+            Я не знаю, что делать.
+            <button onclick="speak('Я не знаю, что делать.')">Speak</button>
+          </td>
+          <td>Ya ne znayu, chto delat'.</td>
+          <td>I don't know what to do.</td>
+        </tr>
+        <tr>
+          <td>
+            Это был замечательный день.
+            <button onclick="speak('Это был замечательный день.')">
+              Speak
+            </button>
+          </td>
+          <td>Eto byl zamechatel'nyy den'.</td>
+          <td>It was a wonderful day.</td>
+        </tr>
+        <tr>
+          <td>
+            Какого цвета твоя машина?
+            <button onclick="speak('Какого цвета твоя машина?')">Speak</button>
+          </td>
+          <td>Kakogo tsveta tvoya mashina?</td>
+          <td>What color is your car?</td>
+        </tr>
+        <tr>
+          <td>
+            Что это за запах?
+            <button onclick="speak('Что это за запах?')">Speak</button>
+          </td>
+          <td>Chto eto za zapakh?</td>
+          <td>What is this smell?</td>
+        </tr>
+        <tr>
+          <td>
+            Что это за животное?
+            <button onclick="speak('Что это за животное?')">Speak</button>
+          </td>
+          <td>Chto eto za zhivotnoe?</td>
+          <td>What kind of animal is this?</td>
+        </tr>
+        <tr>
+          <td>
+            Как ты учишь русский?
+            <button onclick="speak('Как ты учишь русский?')">Speak</button>
+          </td>
+          <td>Kak ty uchish' russkiy?</td>
+          <td>How do you learn Russian?</td>
+        </tr>
+        <tr>
+          <td>
+            Где ты работаешь?
+            <button onclick="speak('Где ты работаешь?')">Speak</button>
+          </td>
+          <td>Gde ty rabotayesh'?</td>
+          <td>Where do you work?</td>
+        </tr>
+        <tr>
+          <td>
+            Какая у вас профессия?
+            <button onclick="speak('Какая у вас профессия?')">Speak</button>
+          </td>
+          <td>Kakaya u vas professiya?</td>
+          <td>What is your profession?</td>
+        </tr>
+        <tr>
+          <td>
+            Сколько это стоит?
+            <button onclick="speak('Сколько это стоит?')">Speak</button>
+          </td>
+          <td>Skol'ko eto stoit?</td>
+          <td>How much does this cost?</td>
+        </tr>
+        <tr>
+          <td>
+            Где ты учишься?
+            <button onclick="speak('Где ты учишься?')">Speak</button>
+          </td>
+          <td>Gde ty uchish'sya?</td>
+          <td>Where do you study?</td>
+        </tr>
+        <tr>
+          <td>
+            Что ты читаешь?
+            <button onclick="speak('Что ты читаешь?')">Speak</button>
+          </td>
+          <td>Chto ty chitaesh'?</td>
+          <td>What are you reading?</td>
+        </tr>
+        <tr>
+          <td>
+            Какой у вас любимый спорт?
+            <button onclick="speak('Какой у вас любимый спорт?')">Speak</button>
+          </td>
+          <td>Kakoy u vas lyubimyy sport?</td>
+          <td>What is your favorite sport?</td>
+        </tr>
+        <tr>
+          <td>
+            Я устал сегодня.
+            <button onclick="speak('Я устал сегодня.')">Speak</button>
+          </td>
+          <td>Ya ustal segodnya.</td>
+          <td>I'm tired today.</td>
+        </tr>
+        <tr>
+          <td>
+            Какой у вас домашний любимец?
+            <button onclick="speak('Какой у вас домашний любимец?')">
+              Speak
+            </button>
+          </td>
+          <td>Kakoy u vas domashniy lyubimets?</td>
+          <td>What is your pet?</td>
+        </tr>
+        <tr>
+          <td>
+            Что ты делаешь?
+            <button onclick="speak('Что ты делаешь?')">Speak</button>
+          </td>
+          <td>Chto ty delaesh'?</td>
+          <td>What are you doing?</td>
+        </tr>
+        <tr>
+          <td>
+            Что это такое?
+            <button onclick="speak('Что это такое?')">Speak</button>
+          </td>
+          <td>Chto eto takoe?</td>
+          <td>What is this?</td>
+        </tr>
+        <tr>
+          <td>
+            Какая у тебя любимая песня?
+            <button onclick="speak('Какая у тебя любимая песня?')">
+              Speak
+            </button>
+          </td>
+          <td>Kakaya u tebya lyubimaya pesnya?</td>
+          <td>What is your favorite song?</td>
+        </tr>
+        <tr>
+          <td>
+            Куда ты идешь?
+            <button onclick="speak('Куда ты идешь?')">Speak</button>
+          </td>
+          <td>Kuda ty idesh'?</td>
+          <td>Where are you going?</td>
+        </tr>
+        <tr>
+          <td>
+            Как тебя зовут?
+            <button onclick="speak('Как тебя зовут?')">Speak</button>
+          </td>
+          <td>Kak tebya zovut?</td>
+          <td>What is your name?</td>
+        </tr>
+        <tr>
+          <td>
+            Сколько тебе лет?
+            <button onclick="speak('Сколько тебе лет?')">Speak</button>
+          </td>
+          <td>Skol'ko tebe let?</td>
+          <td>How old are you?</td>
+        </tr>
+        <tr>
+          <td>
+            Ты можешь помочь мне?
+            <button onclick="speak('Ты можешь помочь мне?')">Speak</button>
+          </td>
+          <td>Ty mozhesh' pomoch' mne?</td>
+          <td>Can you help me?</td>
+        </tr>
+        <tr>
+          <td>
+            Извини, пожалуйста.
+            <button onclick="speak('Извини, пожалуйста.')">Speak</button>
+          </td>
+          <td>Izvini, pozhaluysta.</td>
+          <td>Excuse me, please.</td>
+        </tr>
+        <tr>
+          <td>
+            Спасибо.
+            <button onclick="speak('Спасибо.')">Speak</button>
+          </td>
+          <td>Spasibo.</td>
+          <td>Thank you.</td>
+        </tr>
+        <tr>
+          <td>
+            Пожалуйста.
+            <button onclick="speak('Пожалуйста.')">Speak</button>
+          </td>
+          <td>Pozhaluysta.</td>
+          <td>You're welcome.</td>
+        </tr>
+        <tr>
+          <td>
+            До свидания.
+            <button onclick="speak('До свидания.')">Speak</button>
+          </td>
+          <td>Do svidaniya.</td>
+          <td>Goodbye.</td>
+        </tr>
+        <tr>
+          <td>
+            Да.
+            <button onclick="speak('Да.')">Speak</button>
+          </td>
+          <td>Da.</td>
+          <td>Yes.</td>
+        </tr>
+        <tr>
+          <td>
+            Нет.
+            <button onclick="speak('Нет.')">Speak</button>
+          </td>
+          <td>Net.</td>
+          <td>No.</td>
+        </tr>
+        <tr>
+          <td>
+            Хорошо.
+            <button onclick="speak('Хорошо.')">Speak</button>
+          </td>
+          <td>Khorosho.</td>
+          <td>Okay.</td>
+        </tr>
+        <tr>
+          <td>
+            Я тебя понимаю.
+            <button onclick="speak('Я тебя понимаю.')">Speak</button>
+          </td>
+          <td>Ya tebya ponimayu.</td>
+          <td>I understand you.</td>
+        </tr>
+        <tr>
+          <td>
+            Я не понимаю.
+            <button onclick="speak('Я не понимаю.')">Speak</button>
+          </td>
+          <td>Ya ne ponimayu.</td>
+          <td>I don't understand.</td>
+        </tr>
+        <tr>
+          <td>
+            Повтори, пожалуйста.
+            <button onclick="speak('Повтори, пожалуйста.')">Speak</button>
+          </td>
+          <td>Povtorit, pozhaluysta.</td>
+          <td>Repeat, please.</td>
+        </tr>
+        <tr>
+          <td>
+            Можешь написать это?
+            <button onclick="speak('Можешь написать это?')">Speak</button>
+          </td>
+          <td>Mozhesh' napisat' eto?</td>
+          <td>Can you write this?</td>
+        </tr>
+        <tr>
+          <td>
+            Как это пишется?
+            <button onclick="speak('Как это пишется?')">Speak</button>
+          </td>
+          <td>Kak eto pishhetsya?</td>
+          <td>How do you spell this?</td>
+        </tr>
+        <tr>
+          <td>
+            Что значит это слово?
+            <button onclick="speak('Что значит это слово?')">Speak</button>
+          </td>
+          <td>Chto znachit eto slovo?</td>
+          <td>What does this word mean?</td>
+        </tr>
+        <tr>
+          <td>
+            Как это сказать по-русски?
+            <button onclick="speak('Как это сказать по-русски?')">Speak</button>
+          </td>
+          <td>Kak eto skazat' po-russky?</td>
+          <td>How do you say this in Russian?</td>
+        </tr>
+        <tr>
+          <td>
+            Можно ли здесь курить?
+            <button onclick="speak('Можно ли здесь курить?')">Speak</button>
+          </td>
+          <td>Mozhno li zdes' kurit'?</td>
+          <td>Is it possible to smoke here?</td>
+        </tr>
+        <tr>
+          <td>
+            Где туалет?
+            <button onclick="speak('Где туалет?')">Speak</button>
+          </td>
+          <td>Gde tualet?</td>
+          <td>Where is the toilet?</td>
+        </tr>
+        <tr>
+          <td>
+            Я потерялся.
+            <button onclick="speak('Я потерялся.')">Speak</button>
+          </td>
+          <td>Ya poteryalsya.</td>
+          <td>I'm lost.</td>
+        </tr>
+        <tr>
+          <td>
+            Мне нужна помощь.
+            <button onclick="speak('Мне нужна помощь.')">Speak</button>
+          </td>
+          <td>Mne nuzhna pomoshch'.</td>
+          <td>I need help.</td>
+        </tr>
+        <tr>
+          <td>
+            Я хочу есть.
+            <button onclick="speak('Я хочу есть.')">Speak</button>
+          </td>
+          <td>Ya khochu est'.</td>
+          <td>I'm hungry.</td>
+        </tr>
+        <tr>
+          <td>
+            Я хочу пить.
+            <button onclick="speak('Я хочу пить.')">Speak</button>
+          </td>
+          <td>Ya khochu pit'.</td>
+          <td>I'm thirsty.</td>
+        </tr>
+        <tr>
+          <td>
+            Мне холодно.
+            <button onclick="speak('Мне холодно.')">Speak</button>
+          </td>
+          <td>Mne kholodno.</td>
+          <td>I'm cold.</td>
+        </tr>
+        <tr>
+          <td>
+            Мне жарко.
+            <button onclick="speak('Мне жарко.')">Speak</button>
+          </td>
+          <td>Mne zharko.</td>
+          <td>I'm hot.</td>
+        </tr>
+        <tr>
+          <td>
+            Я болен.
+            <button onclick="speak('Я болен.')">Speak</button>
+          </td>
+          <td>Ya bolen.</td>
+          <td>I'm sick.</td>
+        </tr>
+        <tr>
+          <td>
+            У меня голова болит.
+            <button onclick="speak('У меня голова болит.')">Speak</button>
+          </td>
+          <td>U menya golova bolit.</td>
+          <td>I have a headache.</td>
+        </tr>
+        <tr>
+          <td>
+            Я хочу спать.
+            <button onclick="speak('Я хочу спать.')">Speak</button>
+          </td>
+          <td>Ya khochu spat'.</td>
+          <td>I want to sleep.</td>
+        </tr>
+        <tr>
+          <td>
+            Я люблю тебя.
+            <button onclick="speak('Я люблю тебя.')">Speak</button>
+          </td>
+          <td>Ya lyublyu tebya.</td>
+          <td>I love you.</td>
+        </tr>
+        <tr>
+          <td>
+            Ты мне нравишься.
+            <button onclick="speak('Ты мне нравишься.')">Speak</button>
+          </td>
+          <td>Ty mne nravish'sya.</td>
+          <td>I like you.</td>
+        </tr>
+        <tr>
+          <td>
+            У меня все хорошо.
+            <button onclick="speak('У меня все хорошо.')">Speak</button>
+          </td>
+          <td>U menya vse khorosho.</td>
+          <td>I'm fine.</td>
+        </tr>
+        <tr>
+          <td>
+            Я скучаю по тебе.
+            <button onclick="speak('Я скучаю по тебе.')">Speak</button>
+          </td>
+          <td>Ya skuchayu po tebe.</td>
+          <td>I miss you.</td>
+        </tr>
+        <tr>
+          <td>
+            Поздравляю!
+            <button onclick="speak('Поздравляю!')">Speak</button>
+          </td>
+          <td>Pozdravlyayu!</td>
+          <td>Congratulations!</td>
+        </tr>
+        <tr>
+          <td>
+            Желаю удачи!
+            <button onclick="speak('Желаю удачи!')">Speak</button>
+          </td>
+          <td>Zhelaю udachi!</td>
+          <td>Good luck!</td>
+        </tr>
+        <tr>
+          <td>
+            С днем рождения!
+            <button onclick="speak('С днем рождения!')">Speak</button>
+          </td>
+          <td>S dnem rozhdeniya!</td>
+          <td>Happy birthday!</td>
+        </tr>
+        <tr>
+          <td>
+            С Новым годом!
+            <button onclick="speak('С Новым годом!')">Speak</button>
+          </td>
+          <td>S Novym godom!</td>
+          <td>Happy New Year!</td>
+        </tr>
+        <tr>
+          <td>
+            С Рождеством!
+            <button onclick="speak('С Рождеством!')">Speak</button>
+          </td>
+          <td>S Rozhdestvom!</td>
+          <td>Merry Christmas!</td>
+        </tr>
+        <tr>
+          <td>
+            Ты выглядишь прекрасно.
+            <button onclick="speak('Ты выглядишь прекрасно.')">Speak</button>
+          </td>
+          <td>Ty vyglyadish' prekrasno.</td>
+          <td>You look beautiful.</td>
+        </tr>
+        <tr>
+          <td>
+            Ты очень красивый.
+            <button onclick="speak('Ты очень красивый.')">Speak</button>
+          </td>
+          <td>Ty ochen' krasivyy.</td>
+          <td>You are very handsome.</td>
+        </tr>
+        <tr>
+          <td>
+            Это очень мило.
+            <button onclick="speak('Это очень мило.')">Speak</button>
+          </td>
+          <td>Eto ochen' milo.</td>
+          <td>That's very sweet.</td>
+        </tr>
+        <tr>
+          <td>
+            Ты смешной.
+            <button onclick="speak('Ты смешной.')">Speak</button>
+          </td>
+          <td>Ty smeshnoy.</td>
+          <td>You're funny.</td>
+        </tr>
+        <tr>
+          <td>
+            Я люблю тебя больше всего на свете.
+            <button onclick="speak('Я люблю тебя больше всего на свете.')">
+              Speak
+            </button>
+          </td>
+          <td>Ya lyublyu tebya bol'she vsego na svete.</td>
+          <td>I love you more than anything in the world.</td>
+        </tr>
+        <tr>
+          <td>
+            Ты моя лучшая подруга.
+            <button onclick="speak('Ты моя лучшая подруга.')">Speak</button>
+          </td>
+          <td>Ty moya luchshaya podruga.</td>
+          <td>You are my best friend.</td>
+        </tr>
+        <tr>
+          <td>
+            Ты мой лучший друг.
+            <button onclick="speak('Ты мой лучший друг.')">Speak</button>
+          </td>
+          <td>Ty moy luchshiy drug.</td>
+          <td>You are my best friend.</td>
+        </tr>
+        <tr>
+          <td>
+            Я ценю тебя.
+            <button onclick="speak('Я ценю тебя.')">Speak</button>
+          </td>
+          <td>Ya tsenu tebya.</td>
+          <td>I appreciate you.</td>
+        </tr>
+        <tr>
+          <td>
+            Ты мне очень дорог.
+            <button onclick="speak('Ты мне очень дорог.')">Speak</button>
+          </td>
+          <td>Ty mne ochen' dorog.</td>
+          <td>You mean a lot to me.</td>
+        </tr>
+        <tr>
+          <td>
+            Ты мой любимый человек.
+            <button onclick="speak('Ты мой любимый человек.')">Speak</button>
+          </td>
+          <td>Ty moy lyubimyy chelovek.</td>
+          <td>You are my favorite person.</td>
+        </tr>
+        <tr>
+          <td>
+            Я люблю проводить с тобой время.
+            <button onclick="speak('Я люблю проводить с тобой время.')">
+              Speak
+            </button>
+          </td>
+          <td>Ya lyublyu provodit' s toboy vremya.</td>
+          <td>I love spending time with you.</td>
+        </tr>
+        <tr>
+          <td>
+            Ты всегда знаешь, как меня рассмешить.
+            <button onclick="speak('Ты всегда знаешь, как меня рассмешить.')">
+              Speak
+            </button>
+          </td>
+          <td>Ty vsegda znaesh', kak menya rassmeshit'.</td>
+          <td>You always know how to make me laugh.</td>
+        </tr>
+        <tr>
+          <td>
+            Ты самый умный человек, которого я знаю.
+            <button onclick="speak('Ты самый умный человек, которого я знаю.')">
+              Speak
+            </button>
+          </td>
+          <td>Ty samyy umnyy chelovek, kotorogo ya znayu.</td>
+          <td>You are the smartest person I know.</td>
+        </tr>
+        <tr>
+          <td>
+            Ты всегда готов помочь.
+            <button onclick="speak('Ты всегда готов помочь.')">Speak</button>
+          </td>
+          <td>Ty vsegda gotov pomoch'.</td>
+          <td>You are always ready to help.</td>
+        </tr>
+        <tr>
+          <td>
+            Ты мой герой.
+            <button onclick="speak('Ты мой герой.')">Speak</button>
+          </td>
+          <td>Ty moy geroj.</td>
+          <td>You are my hero.</td>
+        </tr>
+        <tr>
+          <td>
+            Я горжусь тобой.
+            <button onclick="speak('Я горжусь тобой.')">Speak</button>
+          </td>
+          <td>Ya gordzhus' toboy.</td>
+          <td>I'm proud of you.</td>
+        </tr>
+        <tr>
+          <td>
+            Я верю в тебя.
+            <button onclick="speak('Я верю в тебя.')">Speak</button>
+          </td>
+          <td>Ya veryu v tebya.</td>
+          <td>I believe in you.</td>
+        </tr>
+        <tr>
+          <td>
+            Ты особенный.
+            <button onclick="speak('Ты особенный.')">Speak</button>
+          </td>
+          <td>Ty osobennyy.</td>
+          <td>You are special.</td>
+        </tr>
+        <tr>
+          <td>
+            Ты самый лучший!
+            <button onclick="speak('Ты самый лучший!')">Speak</button>
+          </td>
+          <td>Ty samyy luchshiy!</td>
+          <td>You are the best!</td>
+        </tr>
+        <tr>
+          <td>
+            Я тебя никогда не забуду.
+            <button onclick="speak('Я тебя никогда не забуду.')">Speak</button>
+          </td>
+          <td>Ya tebya nikogda ne zabudu.</td>
+          <td>I will never forget you.</td>
+        </tr>
+        <tr>
+          <td>
+            Ты самый добрый человек, которого я знаю.
+            <button
+              onclick="speak('Ты самый добрый человек, которого я знаю.')"
+            >
+              Speak
+            </button>
+          </td>
+          <td>Ty samyy dobryy chelovek, kotorogo ya znayu.</td>
+          <td>You are the kindest person I know.</td>
+        </tr>
+        <tr>
+          <td>
+            Ты делаешь мир лучше.
+            <button onclick="speak('Ты делаешь мир лучше.')">Speak</button>
+          </td>
+          <td>Ty delaesh' mir luchshe.</td>
+          <td>You make the world a better place.</td>
+        </tr>
+        <tr>
+          <td>
+            Я хочу быть с тобой.
+            <button onclick="speak('Я хочу быть с тобой.')">Speak</button>
+          </td>
+          <td>Ya khochu byt' s toboy.</td>
+          <td>I want to be with you.</td>
+        </tr>
+        <tr>
+          <td>
+            Я всегда буду любить тебя.
+            <button onclick="speak('Я всегда буду любить тебя.')">Speak</button>
+          </td>
+          <td>Ya vsegda budu lyubit' tebya.</td>
+          <td>I will always love you.</td>
+        </tr>
+        <tr>
+          <td>
+            Ты мой ангел.
+            <button onclick="speak('Ты мой ангел.')">Speak</button>
+          </td>
+          <td>Ty moy angel.</td>
+          <td>You are my angel.</td>
+        </tr>
+
+        <tr>
+          <td>
+            Здравствуйте!
+            <button onclick="speak('Zdravstvuyte!')">Speak</button>
+          </td>
+          <td>Zdravstvuyte</td>
+          <td>Hello!</td>
+        </tr>
+        <tr>
+          <td>
+            Как дела?
+            <button onclick="speak('Kak dyela?')">Speak</button>
+          </td>
+          <td>Kak dyela</td>
+          <td>How are you?</td>
+        </tr>
+        <tr>
+          <td>
+            Спасибо!
+            <button onclick="speak('Spasibo!')">Speak</button>
+          </td>
+          <td>Spasibo</td>
+          <td>Thank you!</td>
+        </tr>
+        <tr>
+          <td>
+            Пожалуйста!
+            <button onclick="speak('Pozhaluysta!')">Speak</button>
+          </td>
+          <td>Pozhaluysta</td>
+          <td>Please! / You're welcome!</td>
+        </tr>
+        <tr>
+          <td>
+            Извините!
+            <button onclick="speak('Izvinite!')">Speak</button>
+          </td>
+          <td>Izvinite</td>
+          <td>Excuse me! / Sorry!</td>
+        </tr>
+        <tr>
+          <td>
+            Да.
+            <button onclick="speak('Da.')">Speak</button>
+          </td>
+          <td>Da</td>
+          <td>Yes.</td>
+        </tr>
+        <tr>
+          <td>
+            Нет.
+            <button onclick="speak('Net.')">Speak</button>
+          </td>
+          <td>Net</td>
+          <td>No.</td>
+        </tr>
+        <tr>
+          <td>
+            До свидания!
+            <button onclick="speak('Do svidaniya!')">Speak</button>
+          </td>
+          <td>Do svidaniya</td>
+          <td>Goodbye!</td>
+        </tr>
+        <tr>
+          <td>
+            Как вас зовут?
+            <button onclick="speak('Kak vas zovut?')">Speak</button>
+          </td>
+          <td>Kak vas zovut</td>
+          <td>What is your name?</td>
+        </tr>
+        <tr>
+          <td>
+            Меня зовут...
+            <button onclick="speak('Meneya zovut...')">Speak</button>
+          </td>
+          <td>Meneya zovut</td>
+          <td>My name is...</td>
+        </tr>
+        <tr>
+          <td>
+            Хорошо.
+            <button onclick="speak('Horosho.')">Speak</button>
+          </td>
+          <td>Horosho</td>
+          <td>Good. / Okay.</td>
+        </tr>
+        <tr>
+          <td>
+            Плохо.
+            <button onclick="speak('Ploho.')">Speak</button>
+          </td>
+          <td>Ploho</td>
+          <td>Bad. / Not good.</td>
+        </tr>
+        <tr>
+          <td>
+            Я не понимаю.
+            <button onclick="speak('Ya ne ponimayu.')">Speak</button>
+          </td>
+          <td>Ya ne ponimayu</td>
+          <td>I don't understand.</td>
+        </tr>
+        <tr>
+          <td>
+            Повторите, пожалуйста.
+            <button onclick="speak('Povtorite, pozhaluysta.')">Speak</button>
+          </td>
+          <td>Povtorite, pozhaluysta</td>
+          <td>Please repeat.</td>
+        </tr>
+        <tr>
+          <td>
+            Где туалет?
+            <button onclick="speak('Gde tualet?')">Speak</button>
+          </td>
+          <td>Gde tualet</td>
+          <td>Where is the toilet?</td>
+        </tr>
+        <tr>
+          <td>
+            Сколько стоит?
+            <button onclick="speak('Skolko stoit?')">Speak</button>
+          </td>
+          <td>Skolko stoit</td>
+          <td>How much is it?</td>
+        </tr>
+        <tr>
+          <td>
+            Я хочу...
+            <button onclick="speak('Ya hochu...')">Speak</button>
+          </td>
+          <td>Ya hochu</td>
+          <td>I want...</td>
+        </tr>
+        <tr>
+          <td>
+            Я не хочу...
+            <button onclick="speak('Ya ne hochu...')">Speak</button>
+          </td>
+          <td>Ya ne hochu</td>
+          <td>I don't want...</td>
+        </tr>
+        <tr>
+          <td>
+            Мне нравится...
+            <button onclick="speak('Mne nravitsya...')">Speak</button>
+          </td>
+          <td>Mne nravitsya</td>
+          <td>I like...</td>
+        </tr>
+        <tr>
+          <td>
+            Мне не нравится...
+            <button onclick="speak('Mne ne nravitsya...')">Speak</button>
+          </td>
+          <td>Mne ne nravitsya</td>
+          <td>I don't like...</td>
+        </tr>
+        <tr>
+          <td>
+            Я голоден.
+            <button onclick="speak('Ya goloden.')">Speak</button>
+          </td>
+          <td>Ya goloden</td>
+          <td>I am hungry.</td>
+        </tr>
+        <tr>
+          <td>
+            Я устал.
+            <button onclick="speak('Ya ustal.')">Speak</button>
+          </td>
+          <td>Ya ustal</td>
+          <td>I am tired.</td>
+        </tr>
+        <tr>
+          <td>
+            Я болен.
+            <button onclick="speak('Ya bolen.')">Speak</button>
+          </td>
+          <td>Ya bolen</td>
+          <td>I am sick.</td>
+        </tr>
+        <tr>
+          <td>
+            Я люблю...
+            <button onclick="speak('Ya lyublyu...')">Speak</button>
+          </td>
+          <td>Ya lyublyu</td>
+          <td>I love...</td>
+        </tr>
+        <tr>
+          <td>
+            Я ненавижу...
+            <button onclick="speak('Ya nenavizhu...')">Speak</button>
+          </td>
+          <td>Ya nenavizhu</td>
+          <td>I hate...</td>
+        </tr>
+        <tr>
+          <td>
+            У меня есть...
+            <button onclick="speak('U menya yest...')">Speak</button>
+          </td>
+          <td>U menya yest</td>
+          <td>I have...</td>
+        </tr>
+        <tr>
+          <td>
+            У меня нет...
+            <button onclick="speak('U menya net...')">Speak</button>
+          </td>
+          <td>U menya net</td>
+          <td>I don't have...</td>
+        </tr>
+        <tr>
+          <td>
+            Где вы живете?
+            <button onclick="speak('Gde vy zhivete?')">Speak</button>
+          </td>
+          <td>Gde vy zhivete</td>
+          <td>Where do you live?</td>
+        </tr>
+        <tr>
+          <td>
+            Я живу в...
+            <button onclick="speak('Ya zhivu v...')">Speak</button>
+          </td>
+          <td>Ya zhivu v</td>
+          <td>I live in...</td>
+        </tr>
+        <tr>
+          <td>
+            Что вы делаете?
+            <button onclick="speak('Chto vy delaete?')">Speak</button>
+          </td>
+          <td>Chto vy delaete</td>
+          <td>What are you doing?</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+      function speak(text) {
+        const msg = new SpeechSynthesisUtterance();
+        msg.text = text;
+        msg.lang = "ru-RU";
+        window.speechSynthesis.speak(msg);
+      }
+    </script>
+  </body>
+</html>
