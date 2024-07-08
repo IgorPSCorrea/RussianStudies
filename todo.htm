@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speech Synthesis</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      button {
+        padding: 5px 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <table>
+        <thead>
+          <tr>
+            <th>Фраза на русском</th>
+            <th>Пример фонетики</th>
+            <th>Перевод на английский</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Здравствуйте!
+              <button type="button" class="speak-btn">Speak</button>
+            </td>
+            <td>Zdravstvuyte!</td>
+            <td>Hello!</td>
+          </tr>
+        </tbody>
+      </table>
+      <select id="voice-select"></select>
+    </form>
+
+    <script>
+      const synth = window.speechSynthesis;
+
+      const speakButton = document.querySelector(".speak-btn");
+      const voiceSelect = document.querySelector("#voice-select");
+      const phrase = "Здравствуйте!"; // Frase em russo
+
+      function populateVoiceList() {
+        const voices = synth
+          .getVoices()
+          .filter((voice) => voice.lang.startsWith("ru"));
+        voiceSelect.innerHTML = "";
+        for (let i = 0; i < voices.length; i++) {
+          const option = document.createElement("option");
+          option.textContent = `${voices[i].name} (${voices[i].lang})`;
+
+          if (voices[i].default) {
+            option.textContent += " -- DEFAULT";
+          }
+
+          option.setAttribute("data-lang", voices[i].lang);
+          option.setAttribute("data-name", voices[i].name);
+          voiceSelect.appendChild(option);
+        }
+      }
+
+      populateVoiceList();
+      if (speechSynthesis.onvoiceschanged !== undefined) {
+        speechSynthesis.onvoiceschanged = populateVoiceList;
+      }
+
+      speakButton.addEventListener("click", () => {
+        const utterThis = new SpeechSynthesisUtterance(phrase);
+        const selectedOption =
+          voiceSelect.selectedOptions[0].getAttribute("data-name");
+        const voices = synth.getVoices();
+        for (let i = 0; i < voices.length; i++) {
+          if (voices[i].name === selectedOption) {
+            utterThis.voice = voices[i];
+          }
+        }
+        synth.speak(utterThis);
+      });
+    </script>
+  </body>
+</html>
