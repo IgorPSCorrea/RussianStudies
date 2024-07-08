@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      button {
+        padding: 5px 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <select id="voice-select"></select>
+    <p>Microsoft Edge has more natural voice options</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Фраза на русском</th>
+          <th>Пример фонетики</th>
+          <th>Перевод на английский</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Здравствуйте!
+            <button type="button" class="speak-btn">Speak</button>
+          </td>
+          <td>Zdravstvuyte!</td>
+          <td>Hello!</td>
+        </tr>
+        <tr>
+          <td>
+            Доброе утро!
+            <button type="button" class="speak-btn">Speak</button>
+          </td>
+          <td>Dobroe utro!</td>
+          <td>Good morning!</td>
+        </tr>
+        <tr>
+          <td>
+            Добрый день!
+            <button type="button" class="speak-btn">Speak</button>
+          </td>
+          <td>Dobryy den'!</td>
+          <td>Good afternoon!</td>
+        </tr>
+        <tr>
+          <td>
+            Добрый вечер!
+            <button type="button" class="speak-btn">Speak</button>
+          </td>
+          <td>Dobryy vecher!</td>
+          <td>Good evening!</td>
+        </tr>
+        <tr>
+          <td>
+            Как дела?
+            <button type="button" class="speak-btn">Speak</button>
+          </td>
+          <td>Kak dela?</td>
+          <td>How are you?</td>
+        </tr>
+        <tr>
+          <td>
+            Спасибо!
+            <button type="button" class="speak-btn">Speak</button>
+          </td>
+          <td>Spasibo!</td>
+          <td>Thank you!</td>
+        </tr>
+        <tr>
+          <td>
+            Пожалуйста!
+            <button type="button" class="speak-btn">Speak</button>
+          </td>
+          <td>Pozhaluysta!</td>
+          <td>You're welcome!</td>
+        </tr>
+        <tr>
+          <td>
+            До свидания!
+            <button type="button" class="speak-btn">Speak</button>
+          </td>
+          <td>Do svidaniya!</td>
+          <td>Goodbye!</td>
+        </tr>
+        <tr>
+          <td>
+            Извините!
+            <button type="button" class="speak-btn">Speak</button>
+          </td>
+          <td>Izvinite!</td>
+          <td>Excuse me!</td>
+        </tr>
+        <tr>
+          <td>
+            Россия - самая большая страна в мире по площади.
+            <button type="button" class="speak-btn">Speak</button>
+          </td>
+          <td>Rossiya - samaya bolshaya strana v mire po ploshchadi.</td>
+          <td>Russia is the largest country in the world by area.</td>
+        </tr>
+        <tr>
+          <td>
+            Она простирается на 11 часовых поясов.
+            <button type="button" class="speak-btn">Speak</button>
+          </td>
+          <td>Ona prostirayetsya na 11 chasovykh poyasov.</td>
+          <td>It spans across 11 time zones.</td>
+        </tr>
+        <tr>
+          <td>
+            Столица России - Москва.
+            <button type="button" class="speak-btn">Speak</button>
+          </td>
+          <td>Stolitsa Rossii - Moskva.</td>
+          <td>The capital of Russia is Moscow.</td>
+        </tr>
+        <tr>
+          <td>
+            Русский язык - один из самых популярных в мире.
+            <button type="button" class="speak-btn">Speak</button>
+          </td>
+          <td>Russkiy yazyk - odin iz samykh populyarnykh v mire.</td>
+          <td>The Russian language is one of the most popular in the world.</td>
+        </tr>
+        <tr>
+          <td>
+            Россия богата природными ресурсами.
+            <button type="button" class="speak-btn">Speak</button>
+          </td>
+          <td>Rossiya bogata prirodnymi resursami.</td>
+          <td>Russia is rich in natural resources.</td>
+        </tr>
+        <tr>
+          <td>
+            Она имеет разнообразный климат, от арктической тундры до
+            субтропических степей.
+            <button type="button" class="speak-btn">Speak</button>
+          </td>
+          <td>
+            Ona imeet raznoobraznyy klimat, ot arkticheskoy tundry do
+            subtropicheskikh step.
+          </td>
+          <td>
+            It has a diverse climate, from the Arctic tundra to the subtropical
+            steppes.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Россия - страна с богатой историей и культурой.
+            <button type="button" class="speak-btn">Speak</button>
+          </td>
+          <td>Rossiya - strana s bogatoy istoriey i kul'turoy.</td>
+          <td>Russia is a country with a rich history and culture.</td>
+        </tr>
+        <tr>
+          <td>
+            Россия известна своими великими писателями, композиторами и
+            художниками.
+            <button type="button" class="speak-btn">Speak</button>
+          </td>
+          <td>
+            Rossiya izvestna svoyimi velikimi pisatelyami, kompozitorami i
+            khudozhnikami.
+          </td>
+          <td>
+            Russia is known for its great writers, composers, and artists.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Россия - страна контрастов.
+            <button type="button" class="speak-btn">Speak</button>
+          </td>
+          <td>Rossiya - strana kontrastov.</td>
+          <td>Russia is a country of contrasts.</td>
+        </tr>
+        <tr>
+          <td>
+            Изучение кириллицы поможет лучше понять русскую культуру и историю.
+            <button type="button" class="speak-btn">Speak</button>
+          </td>
+          <td>
+            Izucheniye kirillitsy pomozhet luchshe ponyat' russkuyu kulturu i
+            istoriyu.
+          </td>
+          <td>
+            Studying Cyrillic will help you better understand Russian culture
+            and history.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Россия привлекает людей со всего мира.
+            <button type="button" class="speak-btn">Speak</button>
+          </td>
+          <td>Rossiya privlekaet lyudey so vsego mira.</td>
+          <td>Russia attracts people from all over the world.</td>
+        </tr>
+      </tbody>
+    </table>
+    <script>
+      const synth = window.speechSynthesis;
+
+      const speakButton = document.querySelector(".speak-btn");
+      const voiceSelect = document.querySelector("#voice-select");
+      const phrase = "Здравствуйте!"; // Frase em russo
+
+      function populateVoiceList() {
+        const voices = synth
+          .getVoices()
+          .filter((voice) => voice.lang.startsWith("ru"));
+        voiceSelect.innerHTML = "";
+        for (let i = 0; i < voices.length; i++) {
+          const option = document.createElement("option");
+          option.textContent = `${voices[i].name} (${voices[i].lang})`;
+
+          if (voices[i].default) {
+            option.textContent += " -- DEFAULT";
+          }
+
+          option.setAttribute("data-lang", voices[i].lang);
+          option.setAttribute("data-name", voices[i].name);
+          voiceSelect.appendChild(option);
+        }
+      }
+
+      populateVoiceList();
+      if (speechSynthesis.onvoiceschanged !== undefined) {
+        speechSynthesis.onvoiceschanged = populateVoiceList;
+      }
+
+      document.querySelectorAll(".speak-btn").forEach((button) => {
+        button.addEventListener("click", (event) => {
+          const phrase =
+            event.target.parentElement.firstChild.textContent.trim();
+          const utterThis = new SpeechSynthesisUtterance(phrase);
+          const selectedOption =
+            voiceSelect.selectedOptions[0].getAttribute("data-name");
+          const voices = synth.getVoices();
+          for (let i = 0; i < voices.length; i++) {
+            if (voices[i].name === selectedOption) {
+              utterThis.voice = voices[i];
+            }
+          }
+          synth.speak(utterThis);
+        });
+      });
+    </script>
+  </body>
+</html>
