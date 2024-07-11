@@ -1,411 +1,486 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Russian Phrases for Beginners</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        padding: 20px;
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Russian Phrases for Beginners</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #ebebeb;
+      color: #333;
+    }
+
+    h1 {
+      color: #007bff;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+
+    }
+
+    th,
+    td {
+      padding: 5px 10px;
+      border: 0.5px solid #acacac;
+      text-align: left;
+    }
+
+    th {
+      background-color: #cfd2e7;
+
+    }
+    td {
+    }
+
+    button {
+      height: 20px;
+      padding: 5px 10px;
+      color: white;
+      border: none;
+      cursor: pointer;
+      background-image: url('./volume_up_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png') ;
+      background-size: 20px;
+      background-position-y: center;
+      background-repeat: no-repeat;
+      width: 30px;
+
+
+    }
+    button:hover  {
+      background-size: 22px;
+    }
+
+    select{
+      display: flex;
+      height: 30px;
+      left: 33%;
+      border: 0, solid, #fff;
+      background-color: transparent;
+    }
+    
+
+    select:focus, select:focus-visible {
+      border: 0, solid, #fff;
+      background-color: transparent;
+    }
+
+    .description {
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #def8ff;
+      border-top: 5px solid #007bff;
+    }
+
+    .note {
+      border-left: 2px solid #007bff;  
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 50px;
+      background-color: #d2d1ff;
+      padding: 10px;
+      border-radius: 20px;
+    }
+
+    .note p {
+      font-size: small;
+      line-height: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Russian Phrases for Beginners</h1>
+  <div class="description">
+    <p>Welcome! I'm Igor.</p>
+    <p>
+      I'm currently studying Russian, and all the content shared here is created for my personal use. However, I've
+      created this repository to share my resources with others who might find them helpful. Feel free to explore and
+      use the tables of words and phrases to aid in your own learning journey.
+    </p>
+    <div class="note">
+      <select id="voice-select"></select>
+      <p>
+       - The availability and quality of the voices depend on your browser. </p>
+      <p>- For the best experience, we recommend using Microsoft Edge, which offers natural-sounding male and female
+        voices.
+      </p>
+    </div>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Group</th>
+        <th>Russian</th>
+        <th>Transliteration</th>
+        <th>English</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Greetings -->
+      <tr>
+        <td rowspan="5">Greetings</td>
+        <td>Привет!
+          <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Privet!</td>
+        <td>Hi!</td>
+      </tr>
+      <tr>
+        <td>Здравствуйте! <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Zdravstvuyte!</td>
+        <td>Hello!</td>
+      </tr>
+      <tr>
+        <td>Доброе утро! <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Dobroye utro!</td>
+        <td>Good morning!</td>
+      </tr>
+      <tr>
+        <td>Добрый день! <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Dobryy den'!</td>
+        <td>Good afternoon!</td>
+      </tr>
+      <tr>
+        <td>Добрый вечер! <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Dobryy vecher!</td>
+        <td>Good evening!</td>
+      </tr>
+      <!-- Farewells -->
+      <tr>
+        <td rowspan="5">Farewells</td>
+        <td>До свидания! <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Do svidaniya!</td>
+        <td>Goodbye!</td>
+      </tr>
+      <tr>
+        <td>Пока! <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Poka!</td>
+        <td>Bye!</td>
+      </tr>
+      <tr>
+        <td>Увидимся! <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Uvidimsya!
+        </td>
+        <td>See you!</td>
+      </tr>
+      <tr>
+        <td>До завтра! <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Do zavtra!</td>
+        <td>See you tomorrow!</td>
+      </tr>
+      <tr>
+        <td>Спокойной ночи! <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Spokoynoy nochi!</td>
+        <td>Good night!</td>
+      </tr>
+      <!-- Courtesy Phrases -->
+      <tr>
+        <td rowspan="5">Courtesy Phrases</td>
+        <td>Пожалуйста! <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Pozhaluysta!</td>
+        <td>Please!</td>
+      </tr>
+      <tr>
+        <td>Спасибо! <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Spasibo!</td>
+        <td>Thank you!</td>
+      </tr>
+      <tr>
+        <td>Большое спасибо! <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Bol'shoye spasibo!</td>
+        <td>Thank you very much!</td>
+      </tr>
+      <tr>
+        <td>Не за что! <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Ne za chto!</td>
+        <td>You're welcome!</td>
+      </tr>
+      <tr>
+        <td>Извините! <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Izvinite!</td>
+        <td>Sorry!</td>
+      </tr>
+      <!-- Basic Questions -->
+      <tr>
+        <td rowspan="5">Basic Questions</td>
+        <td>Как вас зовут? <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Kak vas zovut?</td>
+        <td>What's your name?</td>
+      </tr>
+      <tr>
+        <td>Откуда вы? <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Otkuda vy?</td>
+        <td>Where are you from?</td>
+      </tr>
+      <tr>
+        <td>Как дела? <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Kak dela?</td>
+        <td>How are you?</td>
+      </tr>
+      <tr>
+        <td>Что это? <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Chto eto?</td>
+        <td>What is this?</td>
+      </tr>
+      <tr>
+        <td>Сколько это стоит? <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Skol'ko eto stoit?</td>
+        <td>How much does it cost?</td>
+      </tr>
+      <!-- Basic Answers -->
+      <tr>
+        <td rowspan="5">Basic Answers</td>
+        <td>Меня зовут... <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Menya zovut...</td>
+        <td>My name is...</td>
+      </tr>
+      <tr>
+        <td>Я из... <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Ya iz...</td>
+        <td>I'm from...</td>
+      </tr>
+      <tr>
+        <td>Хорошо, спасибо! <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Khorosho, spasibo!</td>
+        <td>Good, thank you!</td>
+      </tr>
+      <tr>
+        <td>Это... <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Eto...</td>
+        <td>This is...</td>
+      </tr>
+      <tr>
+        <td>Это стоит... <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Eto stoit...</td>
+        <td>It costs...</td>
+      </tr>
+      <!-- Travel Phrases -->
+      <tr>
+        <td rowspan="5">Travel Phrases</td>
+        <td>Где находится... <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Gde nakhoditsya...</td>
+        <td>Where is...?</td>
+      </tr>
+      <tr>
+        <td>Мне нужен... <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Mne nuzhen...</td>
+        <td>I need...</td>
+      </tr>
+      <tr>
+        <td>Можно счёт, пожалуйста? <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Mozhno schot, pozhaluysta?</td>
+        <td>Can I have the bill, please?</td>
+        
+        </td>
+      </tr>
+      <tr>
+        <td>Я заблудился. <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Ya zabludilsya.</td>
+        <td>I'm lost.</td>
+      </tr>
+      <tr>
+        <td>Говорите ли вы по-английски? <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Govorite li vy po-angliyski?</td>
+        <td>Do you speak English?</td>
+
+        </td>
+      </tr>
+      <!-- Eating Out -->
+      <tr>
+        <td rowspan="5">Eating Out</td>
+        <td>Можно меню?
+          <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Mozhno menyu?</td>
+        <td>Can I have the menu?</td>
+      </tr>
+      <tr>
+        <td>Я хотел бы заказать...
+          <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Ya khotel by zakazat'...</td>
+        <td>I would like to order...</td>
+      </tr>
+      <tr>
+        <td>У вас есть вегетарианские блюда?
+          <button type="button" class="speak-btn"></button>
+        </td>
+        <td>U vas yest' vegetarian'skiye blyuda?</td>
+        <td>Do you have vegetarian dishes?</td>
+      </tr>
+      <tr>
+        <td>Можно воды, пожалуйста?
+          <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Mozhno vody, pozhaluysta?</td>
+        <td>Can I have some water, please?</td>
+      </tr>
+      <tr>
+        <td>Счёт, пожалуйста.
+          <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Schot, pozhaluysta.</td>
+        <td>The bill, please.</td>
+      </tr>
+      <!-- Directions -->
+      <tr>
+        <td rowspan="5">Directions</td>
+        <td>Как пройти к метро?
+          <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Kak proyti k metro?</td>
+        <td>How do I get to the metro?</td>
+      </tr>
+      <tr>
+        <td>Где ближайшая автобусная остановка?
+          <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Gde blizhayshaya avtobusnaya ostanovka?</td>
+        <td>Where is the nearest bus stop?</td>
+      </tr>
+      <tr>
+        <td>Сколько времени займёт?
+          <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Skol'ko vremeni zaymyot?</td>
+        <td>How long will it take?</td>
+      </tr>
+      <tr>
+        <td>Можно карту, пожалуйста?
+          <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Mozhno kartu, pozhaluysta?</td>
+        <td>Can I have a map, please?</td>
+      </tr>
+      <tr>
+        <td>Где здесь туалет?
+          <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Gde zdes' tualet?</td>
+        <td>Where is the bathroom?</td>
+      </tr>
+      <!-- Emergencies -->
+      <tr>
+        <td rowspan="5">Emergencies</td>
+        <td>Помогите!
+          <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Pomogite!</td>
+        <td>Help!</td>
+      </tr>
+      <tr>
+        <td>Мне нужна помощь.
+          <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Mne nuzhna pomoshch'.</td>
+        <td>I need help.</td>
+      </tr>
+      <tr>
+        <td>Вызовите полицию!
+          <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Vyzyvite politsiyu!</td>
+        <td>Call the police!</td>
+      </tr>
+      <tr>
+        <td>Мне нужен врач.
+          <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Mne nuzhen vrach.</td>
+        <td>I need a doctor.</td>
+      </tr>
+      <tr>
+        <td>Я потерялся.
+          <button type="button" class="speak-btn"></button>
+        </td>
+        <td>Ya poteryalsya.</td>
+        <td>I'm lost.</td>
+      </tr>
+    </tbody>
+  </table>
+  <script>
+    const synth = window.speechSynthesis;
+    const speakButton = document.querySelector(".speak-btn");
+    const voiceSelect = document.querySelector("#voice-select");
+    const phrase = "Здравствуйте!"; // Frase em russo
+    function populateVoiceList() {
+      const voices = synth
+        .getVoices()
+        .filter((voice) => voice.lang.startsWith("ru"));
+      voiceSelect.innerHTML = "";
+      for (let i = 0; i < voices.length; i++) {
+        const option = document.createElement("option");
+        option.textContent = `${voices[i].name} (${voices[i].lang})`;
+        if (voices[i].default) {
+          option.textContent += " -- DEFAULT";
+        }
+        option.setAttribute("data-lang", voices[i].lang);
+        option.setAttribute("data-name", voices[i].name);
+        voiceSelect.appendChild(option);
       }
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-      }
-      th,
-      td {
-        padding: 10px;
-        border: 1px solid #ddd;
-        text-align: left;
-      }
-      th {
-        background-color: #f2f2f2;
-      }
-      button {
-        padding: 5px 10px;
-        background-color: #007bff;
-        color: white;
-        border: none;
-        cursor: pointer;
-      }
-      button:hover {
-        background-color: #0056b3;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Russian Phrases for Beginners</h1>
-    <select id="voice-select"></select>
-    <table>
-      <thead>
-        <tr>
-          <th>Group</th>
-          <th>Russian</th>
-          <th>Transliteration</th>
-          <th>English</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Greetings -->
-        <tr>
-          <td rowspan="5">Greetings</td>
-          <td>Привет!             
-            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Privet!</td>
-          <td>Hi!</td>
-        </tr>
-        <tr>
-          <td>Здравствуйте!            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Zdravstvuyte!</td>
-          <td>Hello!</td>
-        </tr>
-        <tr>
-          <td>Доброе утро!            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Dobroye utro!</td>
-          <td>Good morning!</td>
-        </tr>
-        <tr>
-          <td>Добрый день!            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Dobryy den'!</td>
-          <td>Good afternoon!</td>
-        </tr>
-        <tr>
-          <td>Добрый вечер!            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Dobryy vecher!</td>
-          <td>Good evening!</td>
-        </tr>
-        <!-- Farewells -->
-        <tr>
-          <td rowspan="5">Farewells</td>
-          <td>До свидания!            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Do svidaniya!</td>
-          <td>Goodbye!</td>
-        </tr>
-        <tr>
-          <td>Пока!            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Poka!</td>
-          <td>Bye!</td>
-        </tr>
-        <tr>
-          <td>Увидимся!            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Uvidimsya!            
-          </td>
-          <td>See you!</td>
-        </tr>
-        <tr>
-          <td>До завтра!            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Do zavtra!</td>
-          <td>See you tomorrow!</td>
-        </tr>
-        <tr>
-          <td>Спокойной ночи!            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Spokoynoy nochi!</td>
-          <td>Good night!</td>
-        </tr>
-        <!-- Courtesy Phrases -->
-        <tr>
-          <td rowspan="5">Courtesy Phrases</td>
-          <td>Пожалуйста!            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Pozhaluysta!</td>
-          <td>Please!</td>
-        </tr>
-        <tr>
-          <td>Спасибо!            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Spasibo!</td>
-          <td>Thank you!</td>
-        </tr>
-        <tr>
-          <td>Большое спасибо!            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Bol'shoye spasibo!</td>
-          <td>Thank you very much!</td>
-        </tr>
-        <tr>
-          <td>Не за что!            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Ne za chto!</td>
-          <td>You're welcome!</td>
-        </tr>
-        <tr>
-          <td>Извините!            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Izvinite!</td>
-          <td>Sorry!</td>
-        </tr>
-        <!-- Basic Questions -->
-        <tr>
-          <td rowspan="5">Basic Questions</td>
-          <td>Как вас зовут?            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Kak vas zovut?</td>
-          <td>What's your name?</td>
-        </tr>
-        <tr>
-          <td>Откуда вы?            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Otkuda vy?</td>
-          <td>Where are you from?</td>
-        </tr>
-        <tr>
-          <td>Как дела?            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Kak dela?</td>
-          <td>How are you?</td>
-        </tr>
-        <tr>
-          <td>Что это?            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Chto eto?</td>
-          <td>What is this?</td>
-        </tr>
-        <tr>
-          <td>Сколько это стоит?            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Skol'ko eto stoit?</td>
-          <td>How much does it cost?</td>
-        </tr>
-        <!-- Basic Answers -->
-        <tr>
-          <td rowspan="5">Basic Answers</td>
-          <td>Меня зовут...            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Menya zovut...</td>
-          <td>My name is...</td>
-        </tr>
-        <tr>
-          <td>Я из...            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Ya iz...</td>
-          <td>I'm from...</td>
-        </tr>
-        <tr>
-          <td>Хорошо, спасибо!            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Khorosho, spasibo!</td>
-          <td>Good, thank you!</td>
-        </tr>
-        <tr>
-          <td>Это...            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Eto...</td>
-          <td>This is...</td>
-        </tr>
-        <tr>
-          <td>Это стоит...            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Eto stoit...</td>
-          <td>It costs...</td>
-        </tr>
-        <!-- Travel Phrases -->
-        <tr>
-          <td rowspan="5">Travel Phrases</td>
-          <td>Где находится...            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Gde nakhoditsya...</td>
-          <td>Where is...?</td>
-        </tr>
-        <tr>
-          <td>Мне нужен...            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Mne nuzhen...</td>
-          <td>I need...</td>
-        </tr>
-        <tr>
-          <td>Можно счёт, пожалуйста?            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Mozhno schot, pozhaluysta?</td>
-          <td>Can I have the bill, please?</td>
-          <td>
-          </td>
-        </tr>
-        <tr>
-          <td>Я заблудился.            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Ya zabludilsya.</td>
-          <td>I'm lost.</td>
-        </tr>
-        <tr>
-          <td>Говорите ли вы по-английски?            <button type="button" class="speak-btn">Speak</button>
-          </td>
-          <td>Govorite li vy po-angliyski?</td>
-          <td>Do you speak English?</td>
-         
-          </td>
-        </tr>
-            <!-- Eating Out -->
-    <tr>
-      <td rowspan="5">Eating Out</td>
-      <td>Можно меню?            
-        <button type="button" class="speak-btn">Speak</button>
-      </td>
-      <td>Mozhno menyu?</td>
-      <td>Can I have the menu?</td>
-    </tr>
-    <tr>
-      <td>Я хотел бы заказать...            
-        <button type="button" class="speak-btn">Speak</button>
-      </td>
-      <td>Ya khotel by zakazat'...</td>
-      <td>I would like to order...</td>
-    </tr>
-    <tr>
-      <td>У вас есть вегетарианские блюда?            
-        <button type="button" class="speak-btn">Speak</button>
-      </td>
-      <td>U vas yest' vegetarian'skiye blyuda?</td>
-      <td>Do you have vegetarian dishes?</td>
-    </tr>
-    <tr>
-      <td>Можно воды, пожалуйста?            
-        <button type="button" class="speak-btn">Speak</button>
-      </td>
-      <td>Mozhno vody, pozhaluysta?</td>
-      <td>Can I have some water, please?</td>
-    </tr>
-    <tr>
-      <td>Счёт, пожалуйста.            
-        <button type="button" class="speak-btn">Speak</button>
-      </td>
-      <td>Schot, pozhaluysta.</td>
-      <td>The bill, please.</td>
-    </tr>
-    <!-- Directions -->
-    <tr>
-      <td rowspan="5">Directions</td>
-      <td>Как пройти к метро?            
-        <button type="button" class="speak-btn">Speak</button>
-      </td>
-      <td>Kak proyti k metro?</td>
-      <td>How do I get to the metro?</td>
-    </tr>
-    <tr>
-      <td>Где ближайшая автобусная остановка?            
-        <button type="button" class="speak-btn">Speak</button>
-      </td>
-      <td>Gde blizhayshaya avtobusnaya ostanovka?</td>
-      <td>Where is the nearest bus stop?</td>
-    </tr>
-    <tr>
-      <td>Сколько времени займёт?            
-        <button type="button" class="speak-btn">Speak</button>
-      </td>
-      <td>Skol'ko vremeni zaymyot?</td>
-      <td>How long will it take?</td>
-    </tr>
-    <tr>
-      <td>Можно карту, пожалуйста?            
-        <button type="button" class="speak-btn">Speak</button>
-      </td>
-      <td>Mozhno kartu, pozhaluysta?</td>
-      <td>Can I have a map, please?</td>
-    </tr>
-    <tr>
-      <td>Где здесь туалет?            
-        <button type="button" class="speak-btn">Speak</button>
-      </td>
-      <td>Gde zdes' tualet?</td>
-      <td>Where is the bathroom?</td>
-    </tr>
-    <!-- Emergencies -->
-    <tr>
-      <td rowspan="5">Emergencies</td>
-      <td>Помогите!            
-        <button type="button" class="speak-btn">Speak</button>
-      </td>
-      <td>Pomogite!</td>
-      <td>Help!</td>
-    </tr>
-    <tr>
-      <td>Мне нужна помощь.            
-        <button type="button" class="speak-btn">Speak</button>
-      </td>
-      <td>Mne nuzhna pomoshch'.</td>
-      <td>I need help.</td>
-    </tr>
-    <tr>
-      <td>Вызовите полицию!            
-        <button type="button" class="speak-btn">Speak</button>
-      </td>
-      <td>Vyzyvite politsiyu!</td>
-      <td>Call the police!</td>
-    </tr>
-    <tr>
-      <td>Мне нужен врач.            
-        <button type="button" class="speak-btn">Speak</button>
-      </td>
-      <td>Mne nuzhen vrach.</td>
-      <td>I need a doctor.</td>
-    </tr>
-    <tr>
-      <td>Я потерялся.            
-        <button type="button" class="speak-btn">Speak</button>
-      </td>
-      <td>Ya poteryalsya.</td>
-      <td>I'm lost.</td>
-    </tr>
-      </tbody>
-    </table>
-    <script>
-        const synth = window.speechSynthesis;
-  
-        const speakButton = document.querySelector(".speak-btn");
-        const voiceSelect = document.querySelector("#voice-select");
-        const phrase = "Здравствуйте!"; // Frase em russo
-  
-        function populateVoiceList() {
-          const voices = synth
-            .getVoices()
-            .filter((voice) => voice.lang.startsWith("ru"));
-          voiceSelect.innerHTML = "";
-          for (let i = 0; i < voices.length; i++) {
-            const option = document.createElement("option");
-            option.textContent = `${voices[i].name} (${voices[i].lang})`;
-  
-            if (voices[i].default) {
-              option.textContent += " -- DEFAULT";
-            }
-  
-            option.setAttribute("data-lang", voices[i].lang);
-            option.setAttribute("data-name", voices[i].name);
-            voiceSelect.appendChild(option);
+    }
+    populateVoiceList();
+    if (speechSynthesis.onvoiceschanged !== undefined) {
+      speechSynthesis.onvoiceschanged = populateVoiceList;
+    }
+    document.querySelectorAll(".speak-btn").forEach((button) => {
+      button.addEventListener("click", (event) => {
+        const phrase =
+          event.target.parentElement.firstChild.textContent.trim();
+        const utterThis = new SpeechSynthesisUtterance(phrase);
+        const selectedOption =
+          voiceSelect.selectedOptions[0].getAttribute("data-name");
+        const voices = synth.getVoices();
+        for (let i = 0; i < voices.length; i++) {
+          if (voices[i].name === selectedOption) {
+            utterThis.voice = voices[i];
           }
         }
-  
-        populateVoiceList();
-        if (speechSynthesis.onvoiceschanged !== undefined) {
-          speechSynthesis.onvoiceschanged = populateVoiceList;
-        }
-  
-        document.querySelectorAll(".speak-btn").forEach((button) => {
-          button.addEventListener("click", (event) => {
-            const phrase =
-              event.target.parentElement.firstChild.textContent.trim();
-            const utterThis = new SpeechSynthesisUtterance(phrase);
-            const selectedOption =
-              voiceSelect.selectedOptions[0].getAttribute("data-name");
-            const voices = synth.getVoices();
-            for (let i = 0; i < voices.length; i++) {
-              if (voices[i].name === selectedOption) {
-                utterThis.voice = voices[i];
-              }
-            }
-            synth.speak(utterThis);
-          });
-        });
-      </script>
-  </body>
+        synth.speak(utterThis);
+      });
+    });
+   
+  </script>
+</body>
+
 </html>
