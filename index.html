@@ -18,8 +18,8 @@
     }
 
     p {
-      font-size: 1.1em;
-      line-height: 1.6;
+      font-size: 1em;
+      line-height: 1.3;
     }
 
     table {
@@ -61,6 +61,15 @@
       background-size: 22px;
     }
 
+.list {
+ 
+  border-left: 3px solid #007bff;
+  margin-left: 10px;
+}
+.list p {
+  margin-left: 5px;
+}
+
     select{
       display: flex;
       height: 30px;
@@ -70,7 +79,7 @@
     }
     
 
-    select:focus, select:focus-visible {
+    select:focus {
       border: 0, solid, #fff;
       background-color: transparent;
     }
@@ -79,11 +88,11 @@
       margin-bottom: 20px;
       padding: 15px;
       background-color: #def8ff;
-      border-top: 5px solid #007bff;
+      border-top: 5px ridge #007bff;
     }
 
     .note {
-      border-left: 2px solid #007bff;  
+      border: 1px ridge #007bff;  
       font-size: 0.9em;
       color: #666;
       margin-top: 50px;
@@ -96,27 +105,433 @@
       font-size: small;
       line-height: 1;
     }
+    .phonetics {
+            font-style: italic;
+            color: #555;
+        }
   </style>
 </head>
 
 <body>
-  <h1>Russian Phrases for Beginners</h1>
+
+  
+
+
+  <h1>Russian Language for Beginners</h1>
   <div class="description">
-    <p>Welcome! I'm Igor.</p>
+    <p>Welcome! I'm Igor (Игорь).</p>
+    
     <p>
       I'm currently studying Russian, and all the content shared here is created for my personal use. However, I've
       created this repository to share my resources with others who might find them helpful. Feel free to explore and
       use the tables of words and phrases to aid in your own learning journey.
     </p>
     <div class="note">
-      <select id="voice-select"></select>
+
+      <h3>Available voices:</h3><select id="voice-select"></select>
+      <div class="list">
       <p>
-       - The availability and quality of the voices depend on your browser. </p>
-      <p>- For the best experience, we recommend using Microsoft Edge, which offers natural-sounding male and female
+        The availability and quality of the voices depend on your browser. </p>
+      <p> For the best experience, I recommend using Microsoft Edge, which offers natural-sounding male and female
         voices.
       </p>
     </div>
+    </div>
   </div>
+
+  <h3>Introduction to the Cyrillic Alphabet</h3>
+  <p>One of the first steps in learning Russian is to become familiar with the Cyrillic alphabet. Unlike the Latin alphabet used in languages such as Portuguese and English, Russian uses the Cyrillic alphabet, which consists of 33 letters. Knowing these letters is essential to start reading and writing in Russian.</p>
+
+<h4>History and Origins</h4>
+<p>The Cyrillic alphabet was developed in the 9th century by two Byzantine missionary brothers, Saints Cyril and Methodius. They created a writing system for the Slavs that was more suitable for the phonetics of the Slavic languages. Initially, the alphabet they created was called Glagolitic, but it soon evolved into what we know today as the Cyrillic alphabet.</p>
+
+<h4>The 33 Letters of the Cyrillic Alphabet</h4>
+<p>The Cyrillic alphabet contains 33 letters, some of which are similar to the Latin alphabet letters, while others are completely different. Here they are, divided into vowels, consonants, and signs:</p>
+
+  <h3>Cyrillic Alphabet Vowels</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Letter</th>
+                <th>Lowercase</th>
+                <th>Phonetics</th>
+                <th>Example Word</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>А
+                <button type="button" class="speak-btn"></button>
+
+                </td>
+                <td>а</td>
+                <td class="phonetics">a - like "a" in "father"</td>
+                <td>Анна 
+                            <button type="button" class="speak-btn"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Е
+                <button type="button" class="speak-btn"></button>
+
+                </td>
+                <td>е</td>
+                <td class="phonetics">ye - like "ye" in "yes"</td>
+                <td>Елена 
+                            <button type="button" class="speak-btn"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Ё
+                <button type="button" class="speak-btn"></button>
+
+                </td>
+                <td>ё</td>
+                <td class="phonetics">yo - like "yo" in "yoga"</td>
+                <td>Ёлка 
+                            <button type="button" class="speak-btn"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>И
+                <button type="button" class="speak-btn"></button>
+
+                </td>
+                <td>и</td>
+                <td class="phonetics">i - like "ee" in "see"</td>
+                <td>Иван 
+                            <button type="button" class="speak-btn"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td><strong>О</strong>
+                <button type="button" class="speak-btn"></button>
+
+                </td>
+                <td>о</td>
+                <td class="phonetics">o - like "o" in "not"</td>
+                <td>Олег 
+                            <button type="button" class="speak-btn"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>У
+                <button type="button" class="speak-btn"></button>
+
+                </td>
+                <td>у</td>
+                <td class="phonetics">u - like "oo" in "boot"</td>
+                <td>Ура 
+                  <button type="button" class="speak-btn"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Ы</strong>
+                <button type="button" class="speak-btn"></button>
+
+                </td>
+                <td>ы</td>
+                <td class="phonetics">ɨ - unique Russian sound, similar to "i" in "ill"</td>
+                <td>Мышь 
+                            <button type="button" class="speak-btn"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Э
+                <button type="button" class="speak-btn"></button>
+
+                </td>
+                <td>э</td>
+                <td class="phonetics">e - like "e" in "pet"</td>
+                <td>Эхо
+                  <button type="button" class="speak-btn"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Ю
+                <button type="button" class="speak-btn"></button>
+
+                </td>
+                <td>ю</td>
+                <td class="phonetics">yu - like "yu" in "yule"</td>
+                <td>Юлия 
+                  <button type="button" class="speak-btn"></button>
+
+                </td>
+            </tr>
+            <tr>
+                <td>Я
+                <button type="button" class="speak-btn"></button>
+
+                </td>
+                <td>я</td>
+                <td class="phonetics">ya - like "ya" in "yard"</td>
+                <td>Яблоко 
+                  <button type="button" class="speak-btn"></button>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h3>Cyrillic Alphabet Consonants</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Letter</th>
+            <th>Lowercase</th>
+            <th>Phonetics</th>
+            <th>Example Word</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Б
+                <button type="button" class="speak-btn"></button>
+            </td>
+            <td>б</td>
+            <td class="phonetics">b - like "b" in "bat"</td>
+            <td>Борис
+                <button type="button" class="speak-btn"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>В
+                <button type="button" class="speak-btn"></button>
+            </td>
+            <td>в</td>
+            <td class="phonetics">v - like "v" in "vet"</td>
+            <td>Вера
+                <button type="button" class="speak-btn"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>Г
+                <button type="button" class="speak-btn"></button>
+            </td>
+            <td>г</td>
+            <td class="phonetics">g - like "g" in "go"</td>
+            <td>Григорий
+                <button type="button" class="speak-btn"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>Д
+                <button type="button" class="speak-btn"></button>
+            </td>
+            <td>д</td>
+            <td class="phonetics">d - like "d" in "dog"</td>
+            <td>Дмитрий
+                <button type="button" class="speak-btn"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>Ж
+                <button type="button" class="speak-btn"></button>
+            </td>
+            <td>ж</td>
+            <td class="phonetics">zh - like "s" in "measure"</td>
+            <td>Женя
+                <button type="button" class="speak-btn"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>З
+                <button type="button" class="speak-btn"></button>
+            </td>
+            <td>з</td>
+            <td class="phonetics">z - like "z" in "zoo"</td>
+            <td>Зина
+                <button type="button" class="speak-btn"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>К
+                <button type="button" class="speak-btn"></button>
+            </td>
+            <td>к</td>
+            <td class="phonetics">k - like "k" in "key"</td>
+            <td>Кирилл
+                <button type="button" class="speak-btn"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>Л
+                <button type="button" class="speak-btn"></button>
+            </td>
+            <td>л</td>
+            <td class="phonetics">l - like "l" in "lamp"</td>
+            <td>Лена
+                <button type="button" class="speak-btn"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>М
+                <button type="button" class="speak-btn"></button>
+            </td>
+            <td>м</td>
+            <td class="phonetics">m - like "m" in "man"</td>
+            <td>Михаил
+                <button type="button" class="speak-btn"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>Н
+                <button type="button" class="speak-btn"></button>
+            </td>
+            <td>н</td>
+            <td class="phonetics">n - like "n" in "not"</td>
+            <td>Нина
+                <button type="button" class="speak-btn"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>П
+                <button type="button" class="speak-btn"></button>
+            </td>
+            <td>п</td>
+            <td class="phonetics">p - like "p" in "pen"</td>
+            <td>Павел
+                <button type="button" class="speak-btn"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>Р
+                <button type="button" class="speak-btn"></button>
+            </td>
+            <td>р</td>
+            <td class="phonetics">r - like "r" in "red" (rolled)</td>
+            <td>Роман
+                <button type="button" class="speak-btn"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>С
+                <button type="button" class="speak-btn"></button>
+            </td>
+            <td>с</td>
+            <td class="phonetics">s - like "s" in "see"</td>
+            <td>Светлана
+                <button type="button" class="speak-btn"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>Т
+                <button type="button" class="speak-btn"></button>
+            </td>
+            <td>т</td>
+            <td class="phonetics">t - like "t" in "top"</td>
+            <td>Татьяна
+                <button type="button" class="speak-btn"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>Ф
+                <button type="button" class="speak-btn"></button>
+            </td>
+            <td>ф</td>
+            <td class="phonetics">f - like "f" in "fat"</td>
+            <td>Фёдор
+                <button type="button" class="speak-btn"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>Х
+                <button type="button" class="speak-btn"></button>
+            </td>
+            <td>х</td>
+            <td class="phonetics">kh - like "ch" in "loch" or "Bach"</td>
+            <td>Христофор
+                <button type="button" class="speak-btn"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>Ц
+                <button type="button" class="speak-btn"></button>
+            </td>
+            <td>ц</td>
+            <td class="phonetics">ts - like "ts" in "cats"</td>
+            <td>Царь
+                <button type="button" class="speak-btn"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>Ч
+                <button type="button" class="speak-btn"></button>
+            </td>
+            <td>ч</td>
+            <td class="phonetics">ch - like "ch" in "chess"</td>
+            <td>Чайка
+                <button type="button" class="speak-btn"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>Ш
+                <button type="button" class="speak-btn"></button>
+            </td>
+            <td>ш</td>
+            <td class="phonetics">sh - like "sh" in "shop"</td>
+            <td>Шура
+                <button type="button" class="speak-btn"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>Щ
+                <button type="button" class="speak-btn"></button>
+            </td>
+            <td>щ</td>
+            <td class="phonetics">shch - like "sh" in "sheep" (softer)</td>
+            <td>Щука
+                <button type="button" class="speak-btn"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>Й
+                <button type="button" class="speak-btn"></button>
+            </td>
+            <td>й</td>
+            <td class="phonetics">y - like "y" in "boy"</td>
+            <td>Йогурт
+                <button type="button" class="speak-btn"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>Ь
+            </td>
+            <td>ь</td>
+            <td class="phonetics">soft sign, no sound, softens preceding consonant</td>
+            <td>мать
+                <button type="button" class="speak-btn"></button>
+            </td>
+        </tr>
+        <tr>
+            <td>Ъ
+            </td>
+            <td>ъ</td>
+            <td class="phonetics">hard sign, no sound, hardens preceding consonant</td>
+            <td>объект
+                <button type="button" class="speak-btn"></button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h3>Russian words and phrases</h3>
+
+
+<!-- Phrases-->
+
+
   <table>
     <thead>
       <tr>
